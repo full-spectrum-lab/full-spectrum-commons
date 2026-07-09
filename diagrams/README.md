@@ -22,6 +22,12 @@ This repository keeps:
 - `from-ethical-appeal-to-engineering-compilation.png`
   - Use for: public-facing explanation of why AI ethics is moving from principle declarations toward auditable engineering structures.
 
+- `full-spectrum-cognitive-operating-system-blueprint-v01.png`
+  - Use for: introducing the larger Full Spectrum worldview before a reader dives into protocol details.
+
+- `full-spectrum-governance-community-ecosystem-v01.png`
+  - Use for: explaining the early governance-community path from local engine users toward wider ecosystem participation.
+
 ### protocol-system
 
 - `why-ai-needs-relationship-protocol.png`
@@ -30,12 +36,21 @@ This repository keeps:
 ### architecture
 
 - `four-layer-architecture-v01.png`
-  - Use for: explaining the cell → organ → organization → protocol network structure and the core governance runtime chain.
+  - Use for: explaining the cell -> organ -> organization -> protocol network structure and the core governance runtime chain.
+
+- `recursive-four-layer-architecture-v02.png`
+  - Use for: explaining the recursive relationship between local engine, cell protocol, enterprise governance, and the future protocol network.
+
+- `full-spectrum-skills-architecture-overview-v01.png`
+  - Use for: showing the capability / skill composition view behind the public engineering stack.
 
 ### positioning
 
 - `competitive-positioning-and-differentiation-v10.png`
   - Use for: strategic comparison, internal alignment, and ecosystem differentiation discussion.
+
+- `why-full-spectrum-can-cover-the-whole-governance-chain-v01.png`
+  - Use for: explaining why Full Spectrum aims to cover the governance chain from internal action review to cross-subject interoperability.
 
 ### theory-stack
 
@@ -50,15 +65,25 @@ For first public entry:
 
 1. `protocol-system/why-ai-needs-relationship-protocol.png`
 2. `public-intro/from-ethical-appeal-to-engineering-compilation.png`
+3. `public-intro/full-spectrum-cognitive-operating-system-blueprint-v01.png`
 
 For technical explanation:
 
 1. `architecture/four-layer-architecture-v01.png`
-2. `theory-stack/lightweight-engine-heavy-theory-stack-v01.png`
+2. `architecture/recursive-four-layer-architecture-v02.png`
+3. `architecture/full-spectrum-skills-architecture-overview-v01.png`
+4. `theory-stack/lightweight-engine-heavy-theory-stack-v01.png`
 
 For strategic comparison:
 
 1. `positioning/competitive-positioning-and-differentiation-v10.png`
+2. `positioning/why-full-spectrum-can-cover-the-whole-governance-chain-v01.png`
+
+For public positioning or conference use:
+
+1. `public-intro/from-ethical-appeal-to-engineering-compilation.png`
+2. `public-intro/full-spectrum-cognitive-operating-system-blueprint-v01.png`
+3. `public-intro/full-spectrum-governance-community-ecosystem-v01.png`
 
 ## Naming rule
 

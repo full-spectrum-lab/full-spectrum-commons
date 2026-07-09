@@ -48,6 +48,14 @@ Start with:
 - [docs/public-adoption-ladder.md](./docs/public-adoption-ladder.md)
 - [docs/community-stage-1-github-plan.md](./docs/community-stage-1-github-plan.md)
 
+## 2.5 If you only have two minutes
+
+Start with these visual assets:
+
+1. [From Ethical Appeal to Engineering Compilation](./diagrams/public-intro/from-ethical-appeal-to-engineering-compilation.png)
+2. [Why AI Needs a Relationship Protocol](./diagrams/protocol-system/why-ai-needs-relationship-protocol.png)
+3. [Four-Layer Architecture](./diagrams/architecture/four-layer-architecture-v01.png)
+
 ## 3. What should I expect today?
 
 Current public state:
