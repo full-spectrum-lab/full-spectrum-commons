@@ -41,6 +41,13 @@ Go to:
 
 - [full-spectrum-enterprise-governance](https://github.com/full-spectrum-lab/full-spectrum-enterprise-governance)
 
+### I want to understand the adoption path
+
+Start with:
+
+- [docs/public-adoption-ladder.md](./docs/public-adoption-ladder.md)
+- [docs/community-stage-1-github-plan.md](./docs/community-stage-1-github-plan.md)
+
 ## 3. What should I expect today?
 
 Current public state:

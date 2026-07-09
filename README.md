@@ -56,6 +56,8 @@ Without a commons layer, the ecosystem becomes hard to navigate. This repository
 - [Repository Map](./REPO_MAP.md)
 - [Diagrams Index](./diagrams/README.md)
 - [Visual Index](./docs/visual-index.md)
+- [Public Adoption Ladder](./docs/public-adoption-ladder.md)
+- [GitHub Stage-1 Community Plan](./docs/community-stage-1-github-plan.md)
 
 ## Recommended reading path
 
