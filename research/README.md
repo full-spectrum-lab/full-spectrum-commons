@@ -1,5 +1,7 @@
 # Full Spectrum Research
 
+Use the [reproducible working paper checklist](./reproducible-paper-checklist.md) before publishing a new note.
+
 This directory is the public research index for Full Spectrum Lab.
 
 ## Current publications
@@ -17,4 +19,3 @@ This directory is the public research index for Full Spectrum Lab.
 ## Research boundary
 
 Research papers do not override protocol specifications or runtime behavior. A mathematical analogy, simulated example, or conceptual framework is not evidence of production validity. Engineering claims must link to code, tests, schemas, or reproducible examples.
-
