@@ -1,5 +1,14 @@
 # Start Here
 
+Quick public paths:
+
+- [What is implemented?](./docs/evidence-and-status.md)
+- [Run the local Observer Engine](https://github.com/full-spectrum-lab/full-spectrum-engine#quick-start)
+- [Inspect the protocol object chain](https://github.com/full-spectrum-lab/full-spectrum-protocol/tree/main/examples/cases/ecommerce_chain)
+- [Try an enterprise case](https://github.com/full-spectrum-lab/full-spectrum-enterprise-governance/blob/main/docs/try-it-locally.md)
+- [Read public research](./research/README.md)
+- [Read public writing and origins](./docs/public-writing-and-origins.md)
+
 If this is your first time seeing Full Spectrum, use this short path.
 
 ## 1. What is Full Spectrum?

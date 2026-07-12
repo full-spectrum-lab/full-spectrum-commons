@@ -56,6 +56,9 @@ Without a commons layer, the ecosystem becomes hard to navigate. This repository
 - [Repository Map](./REPO_MAP.md)
 - [Diagrams Index](./diagrams/README.md)
 - [Visual Index](./docs/visual-index.md)
+- [Evidence and Project Status](./docs/evidence-and-status.md)
+- [Research Index](./research/README.md)
+- [Public Writing and Origins](./docs/public-writing-and-origins.md)
 - [Public Adoption Ladder](./docs/public-adoption-ladder.md)
 - [GitHub Stage-1 Community Plan](./docs/community-stage-1-github-plan.md)
 
@@ -69,6 +72,12 @@ If you are new to Full Spectrum:
 4. Go to `full-spectrum-protocol` if you need definitions and schemas
 5. Go to `full-spectrum-engine` if you need runnable examples
 6. Go to `full-spectrum-enterprise-governance` if you need business-facing cases and governance packages
+
+## Research and public writing
+
+- [WP-001: Governance Semantics and a Local-First Observer Engine](./research/working-papers/wp-001-governance-semantics-and-local-observer-engine.md) is a public working paper grounded in the current repositories. It is not peer reviewed.
+- [Legacy Manuscript Editorial Review](./research/working-papers/legacy-manuscript-review.md) records why older theory manuscripts are not presented as published evidence yet.
+- [Public Writing and Origins](./docs/public-writing-and-origins.md) links the Douban book, Zhihu column, and official website while separating narrative background from normative specifications.
 
 ## Public boundary
 
