@@ -35,6 +35,10 @@ This repository keeps:
 
 ### architecture
 
+- `three-entry-three-core-components-zh-v10.png`
+  - Use for: the first public explanation of the vision layer, Engine capability layer, enterprise/industrial/ecosystem entry paths, Observer layer and technical foundation.
+  - Status: conceptual relationship map; not proof that every depicted capability is implemented.
+
 - `four-layer-architecture-v01.png`
   - Use for: explaining the cell -> organ -> organization -> protocol network structure and the core governance runtime chain.
 

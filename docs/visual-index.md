@@ -45,6 +45,7 @@ Use when the question is:
 Suggested assets:
 
 - `diagrams/architecture/*`
+- start with `three-entry-three-core-components-zh-v10.png` for the public relationship between Protocol, Engine, Observer and the three entry paths
 - especially `four-layer-architecture-v01.png`
 - `recursive-four-layer-architecture-v02.png`
 - `full-spectrum-skills-architecture-overview-v01.png`
@@ -68,8 +69,9 @@ Suggested assets:
 
 Use:
 
-1. `diagrams/public-intro/from-ethical-appeal-to-engineering-compilation.png`
-2. `diagrams/protocol-system/why-ai-needs-relationship-protocol.png`
+1. `diagrams/architecture/three-entry-three-core-components-zh-v10.png`
+2. `diagrams/public-intro/from-ethical-appeal-to-engineering-compilation.png`
+3. `diagrams/protocol-system/why-ai-needs-relationship-protocol.png`
 
 ### Pack B: explain the engineering stack
 

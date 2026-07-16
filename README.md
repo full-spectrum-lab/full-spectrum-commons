@@ -51,6 +51,7 @@ Without a commons layer, the ecosystem becomes hard to navigate. This repository
 
 ## Start here
 
+- [Three Entry Paths and Three Core Components](./docs/three-entry-three-core-components.md)
 - [START_HERE.md](./START_HERE.md)
 - [Ecosystem Map](./ECOSYSTEM.md)
 - [Repository Map](./REPO_MAP.md)
@@ -66,12 +67,13 @@ Without a commons layer, the ecosystem becomes hard to navigate. This repository
 
 If you are new to Full Spectrum:
 
-1. Read [START_HERE.md](./START_HERE.md)
-2. Open [`diagrams/README.md`](./diagrams/README.md)
-3. Read [`ECOSYSTEM.md`](./ECOSYSTEM.md)
-4. Go to `full-spectrum-protocol` if you need definitions and schemas
+1. Read [Three Entry Paths and Three Core Components](./docs/three-entry-three-core-components.md)
+2. Read [START_HERE.md](./START_HERE.md)
+3. Open [`diagrams/README.md`](./diagrams/README.md)
+4. Go to `full-spectrum-observer` if you need the local application boundary
 5. Go to `full-spectrum-engine` if you need runnable examples
-6. Go to `full-spectrum-enterprise-governance` if you need business-facing cases and governance packages
+6. Go to `full-spectrum-protocol` if you need definitions and schemas
+7. Go to `full-spectrum-enterprise-governance` if you need business-facing cases and governance packages
 
 ## Research and public writing
 

@@ -2,6 +2,8 @@
 
 Quick public paths:
 
+- [Understand the three entries and three components](./docs/three-entry-three-core-components.md)
+- [Inspect Observer](https://github.com/full-spectrum-lab/full-spectrum-observer)
 - [What is implemented?](./docs/evidence-and-status.md)
 - [Run the local Observer Engine](https://github.com/full-spectrum-lab/full-spectrum-engine#quick-start)
 - [Inspect the protocol object chain](https://github.com/full-spectrum-lab/full-spectrum-protocol/tree/main/examples/cases/ecommerce_chain)
@@ -61,9 +63,9 @@ Start with:
 
 Start with these visual assets:
 
-1. [From Ethical Appeal to Engineering Compilation](./diagrams/public-intro/from-ethical-appeal-to-engineering-compilation.png)
-2. [Why AI Needs a Relationship Protocol](./diagrams/protocol-system/why-ai-needs-relationship-protocol.png)
-3. [Four-Layer Architecture](./diagrams/architecture/four-layer-architecture-v01.png)
+1. [Three Entry Paths and Three Core Components](./diagrams/architecture/three-entry-three-core-components-zh-v10.png)
+2. [From Ethical Appeal to Engineering Compilation](./diagrams/public-intro/from-ethical-appeal-to-engineering-compilation.png)
+3. [Why AI Needs a Relationship Protocol](./diagrams/protocol-system/why-ai-needs-relationship-protocol.png)
 
 ## 3. What should I expect today?
 
