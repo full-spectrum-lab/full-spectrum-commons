@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: "If you use the Full Spectrum public framework, diagrams, or working papers, please cite this repository and the exact version or commit used."
+title: "Full Spectrum Commons"
+type: software
+authors:
+  - name: "Full Spectrum Lab"
+repository-code: "https://github.com/full-spectrum-lab/full-spectrum-commons"
+url: "https://github.com/full-spectrum-lab"
+license: Apache-2.0
+keywords:
+  - AI governance
+  - local-first
+  - auditability
+  - human review
+  - governance protocol

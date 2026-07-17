@@ -1,5 +1,9 @@
 # Full Spectrum Research
 
+## Citation
+
+Use the repository-level [`CITATION.cff`](../CITATION.cff) and include the exact commit or Release used for reproduction. A working paper is not peer reviewed unless its own evidence record explicitly says otherwise.
+
 Use the [reproducible working paper checklist](./reproducible-paper-checklist.md) before publishing a new note.
 
 This directory is the public research index for Full Spectrum Lab.

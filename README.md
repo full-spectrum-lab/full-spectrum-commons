@@ -77,6 +77,7 @@ If you are new to Full Spectrum:
 
 ## Research and public writing
 
+- [Citation metadata](./CITATION.cff) provides a standard GitHub citation entry; cite the exact release or commit used.
 - [WP-001: Governance Semantics and a Local-First Observer Engine](./research/working-papers/wp-001-governance-semantics-and-local-observer-engine.md) is a public working paper grounded in the current repositories. It is not peer reviewed.
 - [Legacy Manuscript Editorial Review](./research/working-papers/legacy-manuscript-review.md) records why older theory manuscripts are not presented as published evidence yet.
 - [Public Writing and Origins](./docs/public-writing-and-origins.md) links the Douban book, Zhihu column, and official website while separating narrative background from normative specifications.
