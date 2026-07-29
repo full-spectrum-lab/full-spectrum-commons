@@ -1,5 +1,9 @@
 # Full Spectrum Commons
 
+[![Full Spectrum system master map](./diagrams/product-views/full-spectrum-system-master-map-en-v01.png)](./docs/visual-index.md)
+
+> Shared public diagrams, evidence terminology, research indexes and citation metadata for the Full Spectrum ecosystem. A diagram is an orientation aid, not proof that every depicted capability has shipped.
+
 Shared maps, diagrams, indexes, glossary materials, and public coordination assets for the [Full Spectrum Lab](https://github.com/full-spectrum-lab) GitHub organization.
 
 This repository is the public commons layer of the ecosystem.

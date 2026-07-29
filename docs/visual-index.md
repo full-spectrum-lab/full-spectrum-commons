@@ -2,6 +2,18 @@
 
 This file helps visitors understand which diagram to read first.
 
+## Product and evidence views
+
+| Diagram | Use | Boundary |
+| --- | --- | --- |
+| [System master map](../diagrams/product-views/full-spectrum-system-master-map-en-v01.png) | Organization and ecosystem orientation | Conceptual map; consult each repository for release truth |
+| [Protocol, Engine and Observer boundary](../diagrams/product-views/protocol-engine-observer-boundary-en-v01.png) | Explain distinct responsibilities and optional composition | Does not make Engine or Observer depend on the other |
+| [Governance event and evidence loop](../diagrams/product-views/governance-event-evidence-loop-en-v01.png) | Observer, enterprise cases and review flow | Human review remains outside automated final action |
+| [Knowledge governance lifecycle](../diagrams/product-views/knowledge-governance-lifecycle-en-v01.png) | Knowledge identity, version and lifecycle orientation | Current implementation is narrower than the full map |
+| [Verification path and maturity boundary](../diagrams/product-views/verification-path-maturity-boundary-en-v01.png) | Separate design, fixture, test, release and production claims | A design or fixture does not equal production validation |
+
+These files are the canonical public copies. Product repositories link here instead of maintaining divergent copies.
+
 ## Recommended order
 
 ### 1. Document and protocol-system overview

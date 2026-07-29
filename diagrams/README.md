@@ -2,6 +2,12 @@
 
 This directory stores public visual assets that can be referenced by other Full Spectrum Lab repositories.
 
+## Canonical product views
+
+The `product-views/` directory contains selected, named public diagrams promoted from the local research material library. Product repositories should link to these canonical copies rather than copy and silently modify them.
+
+Every diagram must be read together with its repository's release truth. Architecture, roadmap and research graphics are not delivery evidence by themselves.
+
 ## Why diagrams live here
 
 The diagrams are shared assets.
