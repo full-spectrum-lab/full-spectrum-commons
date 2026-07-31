@@ -6,7 +6,7 @@
 
 Shared maps, diagrams, indexes, glossary materials, and public coordination assets for the [Full Spectrum Lab](https://github.com/full-spectrum-lab) GitHub organization.
 
-This repository is the public commons layer of the ecosystem.
+This repository is the canonical public navigation and terminology layer of the ecosystem.
 
 It is not:
 
@@ -33,6 +33,8 @@ Without a commons layer, the ecosystem becomes hard to navigate. This repository
 |---|---|---|
 | `full-spectrum-protocol` | RFCs, schemas, boundary definitions, compatibility rules | protocol researchers, architects, governance contributors |
 | `full-spectrum-engine` | local-first runnable governance runtime | developers, AI engineers, open-source contributors |
+| `full-spectrum-knowledge-governance` | exact knowledge identity, version, provenance and lifecycle | knowledge stewards, developers, reviewers |
+| `full-spectrum-observer` | authorized reality input, evidence, audit/replay and bounded review | operators, reviewers, enterprise evaluators |
 | `full-spectrum-enterprise-governance` | enterprise-facing governance cases, adapters, reports, deployment patterns | enterprise teams, AI product owners, QA and compliance leads |
 | `full-spectrum-commons` | cross-repo map, diagrams, glossary, public entry materials | first-time visitors, reviewers, collaborators |
 
