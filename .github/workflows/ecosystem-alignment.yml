@@ -1,0 +1,35 @@
+name: Ecosystem alignment
+
+on:
+  push:
+    paths:
+      - "START_HERE.md"
+      - "ECOSYSTEM.md"
+      - "REPO_MAP.md"
+      - "docs/four-independent-engineering-tracks.md"
+      - "scripts/validate-ecosystem-alignment.py"
+      - ".github/workflows/ecosystem-alignment.yml"
+  pull_request:
+    paths:
+      - "START_HERE.md"
+      - "ECOSYSTEM.md"
+      - "REPO_MAP.md"
+      - "docs/four-independent-engineering-tracks.md"
+      - "scripts/validate-ecosystem-alignment.py"
+      - ".github/workflows/ecosystem-alignment.yml"
+  schedule:
+    - cron: "23 3 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: python scripts/validate-ecosystem-alignment.py

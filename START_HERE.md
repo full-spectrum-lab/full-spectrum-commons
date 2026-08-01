@@ -1,9 +1,13 @@
 # Start Here
 
+创建时间：2026-07-09 18:26（北京时间，UTC+8；依据 Git 首次提交）
+最后更新时间：2026-08-01 12:18（北京时间，UTC+8）
+
 Quick public paths:
 
-- [Understand the three entries and three components](./docs/three-entry-three-core-components.md)
+- [Understand the four independent engineering tracks](./docs/four-independent-engineering-tracks.md)
 - [Inspect Observer](https://github.com/full-spectrum-lab/full-spectrum-observer)
+- [Inspect Knowledge Governance](https://github.com/full-spectrum-lab/full-spectrum-knowledge-governance)
 - [What is implemented?](./docs/evidence-and-status.md)
 - [Run the local Observer Engine](https://github.com/full-spectrum-lab/full-spectrum-engine#quick-start)
 - [Inspect the protocol object chain](https://github.com/full-spectrum-lab/full-spectrum-protocol/tree/main/examples/cases/ecommerce_chain)
@@ -45,6 +49,8 @@ Go to:
 Go to:
 
 - [full-spectrum-engine](https://github.com/full-spectrum-lab/full-spectrum-engine)
+- [full-spectrum-observer](https://github.com/full-spectrum-lab/full-spectrum-observer)
+- [full-spectrum-knowledge-governance](https://github.com/full-spectrum-lab/full-spectrum-knowledge-governance)
 
 ### I want enterprise-facing cases
 
@@ -63,7 +69,7 @@ Start with:
 
 Start with these visual assets:
 
-1. [Three Entry Paths and Three Core Components](./diagrams/architecture/three-entry-three-core-components-zh-v10.png)
+1. [Four Independent Engineering Tracks](./docs/four-independent-engineering-tracks.md)
 2. [From Ethical Appeal to Engineering Compilation](./diagrams/public-intro/from-ethical-appeal-to-engineering-compilation.png)
 3. [Why AI Needs a Relationship Protocol](./diagrams/protocol-system/why-ai-needs-relationship-protocol.png)
 
@@ -73,6 +79,8 @@ Current public state:
 
 - `full-spectrum-protocol`: public preview of protocol definitions and schemas
 - `full-spectrum-engine`: local-first runnable governance runtime in early public preview
+- `full-spectrum-observer`: local-first Observer beta pre-release; production ready `NO`
+- `full-spectrum-knowledge-governance`: fixed-knowledge alpha pre-release; production ready `NO`
 - `full-spectrum-enterprise-governance`: enterprise governance cases and deployment framing in public preview
 - `full-spectrum-commons`: shared maps, diagrams, and public navigation
 

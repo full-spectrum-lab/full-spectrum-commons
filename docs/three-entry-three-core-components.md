@@ -1,5 +1,16 @@
 # Three Entry Paths and Three Core Components
 
+创建时间：2026-07-16 23:16（北京时间，UTC+8；依据 Git 首次提交）
+最后更新时间：2026-08-01 12:18（北京时间，UTC+8）
+
+```text
+DOCUMENT_STATUS = HISTORICAL PUBLIC ORIENTATION
+NORMATIVE = NO
+SUPERSEDED_BY = docs/four-independent-engineering-tracks.md
+```
+
+> This page is preserved for history. It predates Knowledge Governance becoming an independent product and must not be used as the current ecosystem map. Use [Four Independent Engineering Tracks](./four-independent-engineering-tracks.md).
+
 > Public orientation note. The diagram describes the target relationship between layers; it is not evidence that every depicted capability has been implemented or production-validated.
 
 [![Full Spectrum: three entry paths and three core components](../diagrams/architecture/three-entry-three-core-components-zh-v10.png)](../diagrams/architecture/three-entry-three-core-components-zh-v10.png)

@@ -1,103 +1,31 @@
-# Full Spectrum Lab Ecosystem Map
+# Full Spectrum Lab ecosystem map
 
-This document explains the intended relationship among the public repositories under `full-spectrum-lab`.
+创建时间：2026-07-08 22:23（北京时间，UTC+8；依据 Git 首次提交）
+最后更新时间：2026-08-01 12:18（北京时间，UTC+8）
 
-## Core structure
+The canonical machine-readable role source is [`full-spectrum-lab/.github/ecosystem/ecosystem-manifest.json`](https://github.com/full-spectrum-lab/.github/blob/main/ecosystem/ecosystem-manifest.json).
 
-```text
-full-spectrum-lab
-  ├─ full-spectrum-protocol
-  ├─ full-spectrum-engine
-  ├─ full-spectrum-enterprise-governance
-  └─ full-spectrum-commons
-```
+## Four independent engineering tracks
 
-## Repository roles
+| Track | Role | Explicit non-goal |
+|---|---|---|
+| [full-spectrum-protocol](https://github.com/full-spectrum-lab/full-spectrum-protocol) | Governance semantics and contracts | Not transport or an executor |
+| [full-spectrum-engine](https://github.com/full-spectrum-lab/full-spectrum-engine) | Deterministic governance evaluation | Not an agent planner or tool executor |
+| [full-spectrum-knowledge-governance](https://github.com/full-spectrum-lab/full-spectrum-knowledge-governance) | Exact knowledge identity, version, provenance and lifecycle | Not RAG, a vector database or CMS |
+| [full-spectrum-observer](https://github.com/full-spectrum-lab/full-spectrum-observer) | Authorized reality input, Observation, Evidence, Audit, Replay and bounded review | Not APM or a production controller |
 
-### 1. full-spectrum-protocol
+Engine, Observer and Knowledge Governance are independently usable. Composition is optional and occurs through explicit contracts or adapters. Final real-world action remains with an authorized human, organization or external business system.
 
-Purpose:
+## Supporting repositories
 
-- protocol drafts
-- RFCs
-- schemas
-- governance semantics
-- compatibility and conformance documents
+- [full-spectrum-enterprise-governance](https://github.com/full-spectrum-lab/full-spectrum-enterprise-governance): synthetic cases, adapter/deployment patterns and review guidance; not a runtime core or proof of named-customer deployment.
+- [full-spectrum-commons](https://github.com/full-spectrum-lab/full-spectrum-commons): public navigation, terminology, diagrams and evidence indexes; not a runtime dependency.
+- [full-spectrum-lab/.github](https://github.com/full-spectrum-lab/.github): organization profile, public status and canonical ecosystem boundaries.
 
-Key question:
+## Reading paths
 
-> What is the governance language and structure for AI-era actions, boundaries, risks, and accountability?
+- New readers: Commons → choose one independent track → verify its exact Release/test evidence.
+- Developers: Engine or KG or Observer, according to the capability needed; Protocol for contracts.
+- Governance reviewers: Protocol + repository-specific evidence + synthetic Enterprise cases.
 
-### 2. full-spectrum-engine
-
-Purpose:
-
-- local-first runnable engine
-- governance event generation
-- risk and safety evaluation
-- reproducible examples
-- validation and regression testing
-
-Key question:
-
-> How do we run the protocol ideas as executable engineering artifacts?
-
-### 3. full-spectrum-enterprise-governance
-
-Purpose:
-
-- business-facing governance packages
-- customer-service inspection cases
-- enterprise deployment patterns
-- human review workflows
-- desensitized business examples
-
-Key question:
-
-> How can enterprises use this in real customer-service, quality, audit, and governance scenarios?
-
-### 4. full-spectrum-commons
-
-Purpose:
-
-- shared diagrams
-- maps and indexes
-- public orientation
-- cross-repo navigation
-- shared asset management
-
-Key question:
-
-> How do we help people understand where to start, how the repositories fit together, and which assets are reusable across the ecosystem?
-
-## Recommended outside-in reading order
-
-### For newcomers
-
-1. `full-spectrum-commons`
-2. `full-spectrum-protocol`
-3. `full-spectrum-engine`
-4. `full-spectrum-enterprise-governance`
-
-### For engineers
-
-1. `full-spectrum-engine`
-2. `full-spectrum-protocol`
-3. `full-spectrum-commons`
-
-### For business and governance readers
-
-1. `full-spectrum-enterprise-governance`
-2. `full-spectrum-protocol`
-3. `full-spectrum-commons`
-
-## Strategic principle
-
-The four repositories should not duplicate each other.
-
-Each repository should carry one primary responsibility:
-
-- Protocol defines
-- Engine runs
-- Enterprise applies
-- Commons explains
+Diagrams explain intended relationships. They do not prove implementation, release, production readiness or customer adoption.

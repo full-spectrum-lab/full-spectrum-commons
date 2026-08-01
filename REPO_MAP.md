@@ -1,85 +1,34 @@
-# Repository Map
+# Repository map
 
-## Current public repositories
+创建时间：2026-07-08 22:23（北京时间，UTC+8；依据 Git 首次提交）
+最后更新时间：2026-08-01 12:18（北京时间，UTC+8）
 
-### full-spectrum-protocol
+## Core engineering tracks
 
-Primary audience:
+| Repository | Primary outputs | Independently usable |
+|---|---|---|
+| `full-spectrum-protocol` | RFCs, Schemas, governance semantics and conformance rules | Yes |
+| `full-spectrum-engine` | Deterministic runtime, fixtures, tests and reports | Yes |
+| `full-spectrum-knowledge-governance` | Knowledge identity/version/lifecycle contracts, fixed resolver and evidence | Yes |
+| `full-spectrum-observer` | Local application, evidence store, audit/replay and bounded review | Yes |
 
-- protocol designers
-- governance researchers
-- standards and schema contributors
-- architects working on interoperability and accountability
+## Support and public coordination
 
-Primary outputs:
+| Repository | Primary outputs | Boundary |
+|---|---|---|
+| `full-spectrum-enterprise-governance` | Synthetic cases, adapters, reports and deployment/review patterns | Not a runtime core or customer deployment claim |
+| `full-spectrum-commons` | Diagrams, terminology, indexes and public orientation | Not a runtime dependency |
+| `.github` | Organization identity, machine-readable status and ecosystem guardrails | Does not replace product release evidence |
 
-- RFCs
-- schemas
-- protocol-level examples
-- compatibility statements
-
-### full-spectrum-engine
-
-Primary audience:
-
-- developers
-- AI agent engineers
-- local-first experimenters
-- validation and testing contributors
-
-Primary outputs:
-
-- runnable engine code
-- CLI workflows
-- test records
-- sample reports
-- release notes
-
-### full-spectrum-enterprise-governance
-
-Primary audience:
-
-- enterprise AI owners
-- customer-service quality teams
-- governance and audit teams
-- solution architects
-
-Primary outputs:
-
-- case packs
-- business adapters
-- deployment notes
-- audit report templates
-
-### full-spectrum-commons
-
-Primary audience:
-
-- first-time visitors
-- cross-repo contributors
-- people who need a project map before reading code
-
-Primary outputs:
-
-- diagrams
-- indexes
-- shared narrative assets
-- terminology and orientation materials
-
-## Asset flow
+## Composition rule
 
 ```text
-commons      -> public diagrams and indexes
-protocol     -> schemas and semantics
-engine       -> runnable implementation
-enterprise   -> business scenario application
+independent product
+    + explicit contract or Adapter when needed
+    + exact version and Evidence
+    = optional composition
 ```
 
-## Practical rule
+There is no mandatory `Protocol → Engine → Observer` pipeline. Knowledge Governance is not a hidden RAG helper, and Enterprise Governance is not an enterprise control plane.
 
-If an item answers one of the following questions, it probably belongs in `full-spectrum-commons`:
-
-- “Where do I start?”
-- “Which repository should I read?”
-- “What does this diagram mean?”
-- “How do the pieces relate?”
+Canonical role source: [ecosystem-manifest.json](https://github.com/full-spectrum-lab/.github/blob/main/ecosystem/ecosystem-manifest.json).
