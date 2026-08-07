@@ -5,6 +5,7 @@
 
 Quick public paths:
 
+- [Start from your question](./docs/start-from-your-question.md) · [从你的问题开始](./docs/start-from-your-question.zh-CN.md)
 - [Understand the four independent engineering tracks](./docs/four-independent-engineering-tracks.md)
 - [Inspect Observer](https://github.com/full-spectrum-lab/full-spectrum-observer)
 - [Inspect Knowledge Governance](https://github.com/full-spectrum-lab/full-spectrum-knowledge-governance)
