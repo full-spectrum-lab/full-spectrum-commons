@@ -151,7 +151,7 @@ NAMED_CUSTOMER        = NO
 FOUR_TRACK_E2E_PROOF  = NOT_YET_COMPLETE
 ```
 
-下一步应在现有案例上补四轨道证据矩阵和最小端到端执行，而不是为了说明架构再新建一个平行案例。
+[当前四轨道证据矩阵](https://github.com/full-spectrum-lab/full-spectrum-enterprise-governance/blob/main/cases/industrial-observer-diox/FOUR_TRACK_EVIDENCE_MATRIX.md)已经逐项记录现有事实与缺失证明。下一步是在版本固定的合同上完成 R01/R02 最小贯通执行，而不是为了说明架构再新建一个平行案例。
 
 ## 今天可以验证什么？
 
@@ -169,4 +169,3 @@ FOUR_TRACK_E2E_PROOF  = NOT_YET_COMPLETE
 本页不能证明整个体系已经生产就绪、四条轨道已经完成生产级贯通、已经形成跨组织协议网络或成熟 Skill 生态，也不能证明具名客户部署、监管批准或法律权威。
 
 所有精确声明仍应通过 Release、Tag、测试、CI 与 Evidence 验证。
-

@@ -151,7 +151,7 @@ NAMED_CUSTOMER        = NO
 FOUR_TRACK_E2E_PROOF  = NOT_YET_COMPLETE
 ```
 
-The next step is to strengthen the existing case with a four-track evidence matrix and minimal end-to-end execution—not to create a parallel case merely to explain the architecture.
+The [current four-track evidence matrix](https://github.com/full-spectrum-lab/full-spectrum-enterprise-governance/blob/main/cases/industrial-observer-diox/FOUR_TRACK_EVIDENCE_MATRIX.md) records what is present and what is still missing. The next step is minimal R01/R02 execution across version-pinned contracts—not a parallel case created merely to explain the architecture.
 
 ## What can be verified today?
 
@@ -169,4 +169,3 @@ The next step is to strengthen the existing case with a four-track evidence matr
 This page does not prove production readiness across the ecosystem, a complete four-track production integration, a running cross-organization protocol network, a mature cross-domain Skill ecosystem, named-customer deployment, regulatory approval or legal authority.
 
 Verify exact claims through releases, tags, tests, CI and Evidence.
-
