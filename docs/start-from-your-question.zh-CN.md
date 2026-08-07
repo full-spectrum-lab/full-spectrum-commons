@@ -28,6 +28,21 @@
 
 它不替代企业业务系统、Agent Runtime、MCP/A2A 传输、RAG、CDC/ETL、工作流、法律权威或承担责任的人类判断。
 
+## 可复用的跨行业模型
+
+四条轨道说明工程职责；更完整的扩展模型说明同一套职责如何跨越主体、组织和行业：
+
+```text
+Engine/主体纵轴 对人 → Agent/工具 → 团队/系统 → 组织 → 跨组织网络进行可复算判断
+知识横轴      行业材料 → 精确版本 → Knowledge Pack → CASE / Skill
+Protocol 网络 谁可以行动 → 能力 → 边界 → 授权 → 证据 → 责任
+行业扩展      Core Contracts + Knowledge Pack + CASE + Adapter + Skill + Evidence
+```
+
+这些轴与网络彼此补充：Engine 把可复算判断贯穿不同主体层级，主体提供责任锚点，知识提供精确判断上下文，Protocol 显式表达关系与边界，Observer 让每个交叉点可观察、可留证、可审计、可复核，CASE、Pack、Adapter 和 Skill 提供行业化入口与执行封装。
+
+这套模型可以用于工业、电商、支付、多 Agent、跨组织数据共享等不同领域，而不需要把行业专属规则写进产品 Core。
+
 ## 我想知道系统为什么作出这个判断
 
 从 **Observer** 开始。

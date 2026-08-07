@@ -28,6 +28,21 @@ fact
 
 It does not replace an enterprise system of record, an agent runtime, MCP/A2A transport, RAG, CDC/ETL, a workflow engine, legal authority or accountable human judgment.
 
+## The reusable cross-domain model
+
+The four tracks are the engineering responsibilities. The broader expansion model explains how the same responsibilities can cross subjects, organizations and industries:
+
+```text
+Engine / subject axis  deterministic evaluation across human → Agent/tool → team/system → organization → cross-organization network
+Horizontal knowledge   domain material → exact version → Knowledge Pack → CASE / Skill
+Protocol relationships who may act → capability → boundary → authorization → evidence → accountability
+Domain extension       Core Contracts + Knowledge Pack + CASE + Adapter + Skill + Evidence
+```
+
+The axes and the network are complementary: Engine applies reproducible evaluation across subject levels; subjects provide responsibility anchors; knowledge provides exact decision context; Protocol makes relationships and boundaries explicit; Observer makes each intersection observable, evidenced, auditable and reviewable; CASE, Pack, Adapter and Skill provide domain-specific entry and execution packaging.
+
+This model can be applied to industrial, ecommerce, payment, multi-Agent, cross-organization data sharing and other domains without moving domain-specific rules into the product cores.
+
 ## I need to understand why a system reached a conclusion
 
 Start with **Observer**.
