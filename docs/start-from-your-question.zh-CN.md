@@ -145,13 +145,15 @@ Observation · Evidence · Audit · Replay · 人工复核
 
 ```text
 CASE_ROLE             = FIRST_INTEGRATED_CASE_CANDIDATE
-CURRENT_STATUS        = SCAFFOLD / DESIGNED_BASELINE
+PUBLIC_GITHUB_STATUS  = SCAFFOLDED
+LOCAL_CASEKIT_STATUS  = LOCAL_REFERENCE_IMPLEMENTATION
+FRESH_CLONE_PROOF     = NOT_PROVEN
 PRODUCTION_VALIDATION = NO
 NAMED_CUSTOMER        = NO
 FOUR_TRACK_E2E_PROOF  = NOT_YET_COMPLETE
 ```
 
-[当前四轨道证据矩阵](https://github.com/full-spectrum-lab/full-spectrum-enterprise-governance/blob/main/cases/industrial-observer-diox/FOUR_TRACK_EVIDENCE_MATRIX.md)已经逐项记录现有事实与缺失证明。下一步是在版本固定的合同上完成 R01/R02 最小贯通执行，而不是为了说明架构再新建一个平行案例。
+[当前四轨道证据矩阵](https://github.com/full-spectrum-lab/full-spectrum-enterprise-governance/blob/main/cases/industrial-observer-diox/FOUR_TRACK_EVIDENCE_MATRIX.md)已经区分 GitHub 公开 Scaffold 与 QPP 记录的本地 R01/R02 参考 Case Kit。近期下一步是 DID-X v0.2 Case Kit 基线可信化；Observer、Engine 组合与 Knowledge Governance 集成仍按后续版本分期进入，而不是为了说明架构再新建平行案例。
 
 ## 今天可以验证什么？
 

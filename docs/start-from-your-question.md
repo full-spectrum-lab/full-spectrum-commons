@@ -145,13 +145,15 @@ The existing synthetic automotive/industrial DID-X / DIO-X line is the preferred
 
 ```text
 CASE_ROLE             = FIRST_INTEGRATED_CASE_CANDIDATE
-CURRENT_STATUS        = SCAFFOLD / DESIGNED_BASELINE
+PUBLIC_GITHUB_STATUS  = SCAFFOLDED
+LOCAL_CASEKIT_STATUS  = LOCAL_REFERENCE_IMPLEMENTATION
+FRESH_CLONE_PROOF     = NOT_PROVEN
 PRODUCTION_VALIDATION = NO
 NAMED_CUSTOMER        = NO
 FOUR_TRACK_E2E_PROOF  = NOT_YET_COMPLETE
 ```
 
-The [current four-track evidence matrix](https://github.com/full-spectrum-lab/full-spectrum-enterprise-governance/blob/main/cases/industrial-observer-diox/FOUR_TRACK_EVIDENCE_MATRIX.md) records what is present and what is still missing. The next step is minimal R01/R02 execution across version-pinned contracts—not a parallel case created merely to explain the architecture.
+The [current four-track evidence matrix](https://github.com/full-spectrum-lab/full-spectrum-enterprise-governance/blob/main/cases/industrial-observer-diox/FOUR_TRACK_EVIDENCE_MATRIX.md) separates the public scaffold from the QPP-recorded local R01/R02 reference Case Kit. The immediate next step is DID-X v0.2 Case Kit trust hardening; Observer, Engine composition and Knowledge Governance integration remain later versioned stages—not a parallel case created merely to explain the architecture.
 
 ## What can be verified today?
 
