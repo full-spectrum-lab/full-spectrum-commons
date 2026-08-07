@@ -43,6 +43,44 @@ The axes and the network are complementary: Engine applies reproducible evaluati
 
 This model can be applied to industrial, ecommerce, payment, multi-Agent, cross-organization data sharing and other domains without moving domain-specific rules into the product cores.
 
+## One system: local value and network value
+
+Full Spectrum is one governance system with independently deployable tracks, not a collection of unrelated components whose value appears only after arbitrary assembly. The tracks share contracts, invariants, evidence semantics and responsibility boundaries.
+
+### One organization
+
+An organization can run a local node without joining an external network:
+
+```text
+authorized facts → Observe → deterministic evaluation → Gate / human review → the organization's own system acts
+```
+
+The local value is a governed, replayable decision chain. Full Spectrum does not replace the organization's ERP, CRM, Agent Runtime, workflow, database or control system.
+
+### Multiple organizations
+
+When organizations connect through Protocol-compatible events and receipts, the value becomes relational rather than merely additive:
+
+```text
+organization A intent
+  → identity / capability / boundary / evidence / authorization
+  → governed event
+  → organization B Gate
+  → B's own system acts
+  → disposition receipt
+  → shared audit and replay references
+```
+
+Each organization keeps its own data, systems and final action authority. The network gains a shared, verifiable governance memory—not a centralized autonomous brain. Its mature intelligence comes from accumulated exact knowledge, evidence, decisions, receipts and replayable history across connected organizations.
+
+### Two capability modes, one mature composition
+
+- **Observe mode** records facts, evaluates them, produces Evidence/Audit/Replay and supports bounded review.
+- **Govern mode** produces a scoped `ALLOW`, `DENY`, `REQUIRE_HUMAN_REVIEW` or `UNKNOWN` Gate for the organization's system to enforce.
+- **Mature composition** combines Observe and Govern across organizations and uses the resulting evidence to compare bounded candidate paths. It is not a separate third product generation and it is not a claim of global optimum or autonomous execution.
+
+The availability of Observe, Gate and network behavior is release-specific. Verify each capability through the relevant product release, exact version, tests and Evidence; this architecture model does not upgrade planned capability into implemented fact.
+
 ## I need to understand why a system reached a conclusion
 
 Start with **Observer**.
