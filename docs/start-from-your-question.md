@@ -71,7 +71,7 @@ organization A intent
   → shared audit and replay references
 ```
 
-Each organization keeps its own data, systems and final action authority. The network gains a shared, verifiable governance memory—not a centralized autonomous brain. Its mature intelligence comes from accumulated exact knowledge, evidence, decisions, receipts and replayable history across connected organizations.
+Each organization keeps its own data, systems and final action authority. Participating enterprises, organizations, public institutions or sovereign participants build and operate the network themselves; Full Spectrum provides the method, contracts, node patterns and Engine/Observer capabilities. The network gains a shared, verifiable governance memory—not a centralized autonomous brain. Its mature intelligence comes from accumulated exact knowledge, evidence, decisions, receipts and replayable history across participating organizations.
 
 ### Two capability modes, one mature composition
 
@@ -80,6 +80,8 @@ Each organization keeps its own data, systems and final action authority. The ne
 - **Mature composition** combines Observe and Govern across organizations and uses the resulting evidence to compare bounded candidate paths. It is not a separate third product generation and it is not a claim of global optimum or autonomous execution.
 
 The availability of Observe, Gate and network behavior is release-specific. Verify each capability through the relevant product release, exact version, tests and Evidence; this architecture model does not upgrade planned capability into implemented fact.
+
+The second-generation direction uses participant-operated protocol nodes / Protocol Executors to invoke Engine and Observer for governance Gates and bounded optimization, while participants' own systems execute approved actions. Full Spectrum does not operate the business workflow or own the network.
 
 ## I need to understand why a system reached a conclusion
 
