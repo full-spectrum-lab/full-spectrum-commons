@@ -13,6 +13,8 @@ Research -> Hypothesis -> Design -> Implementation -> Test -> Runtime Evidence
 
 ## 2. 候选映射
 
+以下内容均为 `PROPOSED`，不是跨仓库实现事实。
+
 | 研究问题 | 候选工程方向 | 权威事实位置 |
 |---|---|---|
 | 跨代知识传递 | Knowledge identity、version、source | Knowledge Governance 仓库 |
@@ -24,11 +26,23 @@ Research -> Hypothesis -> Design -> Implementation -> Test -> Runtime Evidence
 
 表中“候选方向”不自动表示已实现。
 
+**INTERPRETATION**：文明研究中的记忆、迁移、身份和纠偏问题，与 Full Spectrum 已公开的 Evidence、Version、Identity、Replay 和人工授权主题存在结构呼应。
+
+**LIMITATION**：结构呼应不是依赖关系、兼容声明、测试结果或生产证据。
+
 ## 3. 组件边界
+
+**OBSERVED**：各 Full Spectrum 仓库分别承担 Protocol、Engine、Observer、Knowledge Governance 和 Commons 的不同公开职责。
+
+**INTERPRETATION**：研究系列可以借用这些边界帮助读者理解研究启示与工程事实的分离。
 
 Protocol 可以定义身份、Envelope、版本和互操作契约，但不应把文明观点硬编码成共同信仰。Engine 可以做确定性计算和回放，但不是最终价值权威。Observer 可以观察、记录、暴露 UNKNOWN 和请求人工复核，但不应未经授权执行最终业务行动。Knowledge Governance 可以保留知识身份、来源和冲突，不应偷偷把所有传统合并成一个答案。Commons 承载公共研究和导航，不是规范真源。
 
 ## 4. Continuity Anchors 的工程问题
+
+**PROPOSED**：身份、证据、来源、版本历史、责任与边界可以作为长期软件系统的候选连续性锚点。
+
+**LIMITATION**：本研究尚未把这些锚点编译为 Protocol 要求，也未对现有实现做完整一致性验证。
 
 长期软件系统值得保护的可能不是所有旧组件，而是可追踪的身份、证据、来源、版本历史、责任与边界。组件可以被替换，旧规则可以废止，但迁移关系和授权责任不应凭空消失。
 

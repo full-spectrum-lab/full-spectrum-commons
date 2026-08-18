@@ -15,6 +15,7 @@ The series uses Chinese civilization as an initial case, not as proof of civiliz
 5. [跨文明比较研究框架](./04_跨文明比较研究框架.md)
 6. [对 Full Spectrum 架构的非规范性启示](./05_对Full_Spectrum架构的非规范性启示.md)
 7. [反例、风险与不可兼容边界](./06_反例、风险与不可兼容边界.md)
+8. [Sources and Review Records](./sources/README.md)
 
 ## Evidence labels
 
@@ -40,3 +41,12 @@ Historical observation
 ```
 
 No document here overrides the Full Spectrum Protocol, Engine, Observer, Knowledge Governance, repository Releases, or their evidence.
+
+## Current research status
+
+```ini
+INDEPENDENT_READING = COMPLETED
+INLINE_LABELING = PARTIAL
+SOURCE_REGISTER = IN_PROGRESS
+PEER_REVIEW = NOT_STARTED
+```
