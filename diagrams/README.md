@@ -54,6 +54,14 @@ This repository keeps:
 - `full-spectrum-skills-architecture-overview-v01.png`
   - Use for: showing the capability / skill composition view behind the public engineering stack.
 
+- `observer-general-system-overview-zh-v01.png`
+  - Use for: the Observer-centered view joining the Engine vertical axis, Knowledge Governance horizontal axis, Protocol network layer, and CASE/Pack/Adapter/Skill expansion.
+  - Status: architecture overview; it is not a claim that the current Observer beta implements every depicted layer.
+
+- `recursive-four-layer-runtime-chain-zh-v01.png`
+  - Use for: explaining the cell -> organ -> organization -> protocol network recursion and the repeated governance runtime chain at each scale.
+  - Status: designed recursive architecture; cross-level runtime verification remains separate.
+
 ### positioning
 
 - `competitive-positioning-and-differentiation-v10.png`
@@ -66,6 +74,12 @@ This repository keeps:
 
 - `lightweight-engine-heavy-theory-stack-v01.png`
   - Use for: explaining why the engine can stay small while still carrying a heavier governance-theory foundation.
+
+### product-views
+
+- `full-spectrum-positive-governance-flywheel-zh-v01.png`
+  - Use for: showing the feedback loop from real-world operation and Observer evidence through Engine analysis, governance improvement, wider scenarios, and ecosystem feedback.
+  - Status: system evolution model; a diagram does not itself prove production feedback or network scale.
 
 ## Usage guidance
 

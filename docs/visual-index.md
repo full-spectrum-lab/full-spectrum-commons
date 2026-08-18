@@ -11,6 +11,7 @@ This file helps visitors understand which diagram to read first.
 | [Governance event and evidence loop](../diagrams/product-views/governance-event-evidence-loop-en-v01.png) | Observer, enterprise cases and review flow | Human review remains outside automated final action |
 | [Knowledge governance lifecycle](../diagrams/product-views/knowledge-governance-lifecycle-en-v01.png) | Knowledge identity, version and lifecycle orientation | Current implementation is narrower than the full map |
 | [Verification path and maturity boundary](../diagrams/product-views/verification-path-maturity-boundary-en-v01.png) | Separate design, fixture, test, release and production claims | A design or fixture does not equal production validation |
+| [Positive governance flywheel](../diagrams/product-views/full-spectrum-positive-governance-flywheel-zh-v01.png) | Real-world feedback, Observer evidence, Engine analysis and ecosystem evolution | Evolution model; not production-scale evidence |
 
 These files are the canonical public copies. Product repositories link here instead of maintaining divergent copies.
 
@@ -60,6 +61,8 @@ Suggested assets:
 - start with `three-entry-three-core-components-zh-v10.png` for the public relationship between Protocol, Engine, Observer and the three entry paths
 - especially `four-layer-architecture-v01.png`
 - `recursive-four-layer-architecture-v02.png`
+- `observer-general-system-overview-zh-v01.png`
+- `recursive-four-layer-runtime-chain-zh-v01.png`
 - `full-spectrum-skills-architecture-overview-v01.png`
 
 ### 5. Public introduction
@@ -84,6 +87,12 @@ Use:
 1. `diagrams/architecture/three-entry-three-core-components-zh-v10.png`
 2. `diagrams/public-intro/from-ethical-appeal-to-engineering-compilation.png`
 3. `diagrams/protocol-system/why-ai-needs-relationship-protocol.png`
+
+For the newer holographic architecture view, add:
+
+4. `diagrams/architecture/observer-general-system-overview-zh-v01.png`
+5. `diagrams/architecture/recursive-four-layer-runtime-chain-zh-v01.png`
+6. `diagrams/product-views/full-spectrum-positive-governance-flywheel-zh-v01.png`
 
 ### Pack B: explain the engineering stack
 
