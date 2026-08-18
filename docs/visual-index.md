@@ -111,6 +111,9 @@ Use:
 
 ## Use rule
 
+For the relationship between the three newer architecture diagrams and current
+repository evidence, see the [Holographic Governance Architecture Fact Baseline](./holographic-governance-architecture-fact-baseline.md).
+
 Do not paste every diagram into every external conversation.
 
 Choose the smallest set that answers the current question:

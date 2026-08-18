@@ -65,6 +65,7 @@ Without a commons layer, the ecosystem becomes hard to navigate. This repository
 - [Diagrams Index](./diagrams/README.md)
 - [Visual Index](./docs/visual-index.md)
 - [Evidence and Project Status](./docs/evidence-and-status.md)
+- [Holographic Governance Architecture Fact Baseline](./docs/holographic-governance-architecture-fact-baseline.md)
 - [Research Index](./research/README.md)
 - [Public Writing and Origins](./docs/public-writing-and-origins.md)
 - [Public Adoption Ladder](./docs/public-adoption-ladder.md)
