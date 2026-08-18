@@ -16,6 +16,7 @@ The series uses Chinese civilization as an initial case, not as proof of civiliz
 6. [对 Full Spectrum 架构的非规范性启示](./05_对Full_Spectrum架构的非规范性启示.md)
 7. [反例、风险与不可兼容边界](./06_反例、风险与不可兼容边界.md)
 8. [Sources and Review Records](./sources/README.md)
+9. [研究证据与运行验证索引](./07_研究证据与运行验证索引.md)
 
 ## Evidence labels
 
