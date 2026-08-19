@@ -17,6 +17,7 @@ The series uses Chinese civilization as an initial case, not as proof of civiliz
 7. [反例、风险与不可兼容边界](./06_反例、风险与不可兼容边界.md)
 8. [Sources and Review Records](./sources/README.md)
 9. [研究证据与运行验证索引](./07_研究证据与运行验证索引.md)
+10. [从中华文明到 Full Spectrum：思想谱系与工程翻译](./08_从中华文明到Full_Spectrum：思想谱系与工程翻译.md)
 
 ## Evidence labels
 
