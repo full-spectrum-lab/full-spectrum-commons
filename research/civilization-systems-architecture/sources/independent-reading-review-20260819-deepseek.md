@@ -1,7 +1,7 @@
 # DeepSeek 独立阅读记录：思想谱系与工程翻译
 
-记录日期：2026-08-19  
-阅读者：DeepSeek（无项目背景的外部阅读实例）  
+记录日期：2026-08-19
+阅读者：DeepSeek（无项目背景的外部阅读实例）
 材料：
 
 - [Civilization Systems Architecture](../README.md)
@@ -129,4 +129,3 @@ DOCUMENT_BOUNDARY_EFFECTIVE = PARTIAL
 ## 6. 后续动作
 
 本记录暂不触发正文改写。后续若同类阅读持续出现相同漂移，可考虑在研究 README 和第 08 篇开头增加更醒目的“候选映射不是等价关系”警告，并为 `INTERPRETATION / HYPOTHESIS / PROPOSED` 增加机器可读索引。
-
