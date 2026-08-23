@@ -14,6 +14,7 @@ Quick public paths:
 - [Inspect the protocol object chain](https://github.com/full-spectrum-lab/full-spectrum-protocol/tree/main/examples/cases/ecommerce_chain)
 - [Try an enterprise case](https://github.com/full-spectrum-lab/full-spectrum-enterprise-governance/blob/main/docs/try-it-locally.md)
 - [Read public research](./research/README.md)
+- [阅读《AI 生态分化时代的治理互操作》](./research/working-papers/ai-ecosystem-governance-interoperability.zh-CN.md)
 - [Read public writing and origins](./docs/public-writing-and-origins.md)
 
 If this is your first time seeing Full Spectrum, use this short path.

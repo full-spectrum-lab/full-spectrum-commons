@@ -146,6 +146,8 @@ Core Contracts
 - [视觉索引](./visual-index.md)；
 - [公开采用阶梯](./public-adoption-ladder.md)。
 
+如果你关注不同 AI 生态之间如何在保留自治与差异的前提下形成有限、可验证的治理关系，可阅读非规范性研究注记：[《AI 生态分化时代的治理互操作：从“生态选边”到“协议网络”》](../research/working-papers/ai-ecosystem-governance-interoperability.zh-CN.md)。该文未经同行评审，不代表跨网络运行时已经部署。
+
 ## 四条轨道如何组合
 
 四条轨道均可独立使用。组合使用时应绑定明确合同和精确版本。
