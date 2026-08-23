@@ -1,7 +1,7 @@
 # 从你的问题开始
 
 创建时间：2026-08-08 02:35（北京时间，UTC+8）  
-最后更新时间：2026-08-08 02:35（北京时间，UTC+8）  
+最后更新时间：2026-08-23 16:25（北京时间，UTC+8）
 文档状态：`公共导航 / 非规范性文档`  
 证据规则：各仓库 Release、精确 Tag、测试和随附 Evidence 仍是公开事实依据。
 
@@ -145,6 +145,8 @@ Core Contracts
 - [证据与项目状态](./evidence-and-status.md)；
 - [视觉索引](./visual-index.md)；
 - [公开采用阶梯](./public-adoption-ladder.md)。
+
+如果你关注不同 AI 生态之间如何在保留自治与差异的前提下形成有限、可验证的治理关系，可阅读非规范性研究注记：[《AI 生态分化时代的治理互操作：从“生态选边”到“协议网络”》](../research/working-papers/ai-ecosystem-governance-interoperability.zh-CN.md)。该文未经同行评审，不代表跨网络运行时已经部署。
 
 ## 四条轨道如何组合
 

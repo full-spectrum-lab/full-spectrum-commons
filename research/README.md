@@ -1,5 +1,8 @@
 # Full Spectrum Research
 
+> Created at: 2026-07-12 09:58 UTC+8 (based on the first Git commit)
+> Last updated at: 2026-08-23 16:25 UTC+8
+
 ## Citation
 
 Use the repository-level [`CITATION.cff`](../CITATION.cff) and include the exact commit or Release used for reproduction. A working paper is not peer reviewed unless its own evidence record explicitly says otherwise.
@@ -10,6 +13,7 @@ This directory is the public research index for Full Spectrum Lab.
 
 ## Current publications
 
+- [AI Ecosystem Fragmentation and Governance Interoperability (Chinese)](./working-papers/ai-ecosystem-governance-interoperability.zh-CN.md) — a non-normative strategic research note on minimum shared governance semantics, verifiable evidence, and bounded responsibility across autonomous AI ecosystems. It is not peer reviewed and makes no claim that a cross-network runtime is deployed.
 - [WP-001: Governance Semantics and a Local-First Observer Engine](./working-papers/wp-001-governance-semantics-and-local-observer-engine.md) — public working paper grounded in the current protocol and engine repositories.
 - [Legacy manuscript editorial review](./working-papers/legacy-manuscript-review.md) — publication decisions for older theory manuscripts.
 - [Civilization Systems Architecture](./civilization-systems-architecture/README.md) — a Chinese-language, non-normative research series on continuity, memory, difference, correction, and bounded engineering implications. It is not peer reviewed and makes no implementation claim.
