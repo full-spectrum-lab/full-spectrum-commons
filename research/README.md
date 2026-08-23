@@ -1,5 +1,8 @@
 # Full Spectrum Research
 
+> Created at: 2026-07-12 09:58 UTC+8 (based on the first Git commit)
+> Last updated at: 2026-08-23 16:25 UTC+8
+
 ## Citation
 
 Use the repository-level [`CITATION.cff`](../CITATION.cff) and include the exact commit or Release used for reproduction. A working paper is not peer reviewed unless its own evidence record explicitly says otherwise.

@@ -2,6 +2,9 @@
 
 ## 从“生态选边”到“协议网络”
 
+创建时间：2026-08-23 16:25（北京时间，UTC+8）
+最后更新时间：2026-08-23 16:25（北京时间，UTC+8）
+
 ```ini
 DOCUMENT_ID = FS-GI-001
 DOCUMENT_TYPE = STRATEGIC_RESEARCH_NOTE

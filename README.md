@@ -1,5 +1,8 @@
 # Full Spectrum Commons
 
+> Created at: 2026-07-08 19:12 UTC+8 (based on the first Git commit)
+> Last updated at: 2026-08-23 16:25 UTC+8
+
 [![Full Spectrum system master map](./diagrams/product-views/full-spectrum-system-master-map-en-v01.png)](./docs/visual-index.md)
 
 > Shared public diagrams, evidence terminology, research indexes and citation metadata for the Full Spectrum ecosystem. A diagram is an orientation aid, not proof that every depicted capability has shipped.
