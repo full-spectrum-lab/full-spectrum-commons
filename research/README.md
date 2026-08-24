@@ -1,7 +1,7 @@
 # Full Spectrum Research
 
 > Created at: 2026-07-12 09:58 UTC+8 (based on the first Git commit)
-> Last updated at: 2026-08-24 11:07 UTC+8
+> Last updated at: 2026-08-25 03:45 UTC+8
 
 ## Citation
 
@@ -13,6 +13,7 @@ This directory is the public research index for Full Spectrum Lab.
 
 ## Current publications
 
+- [CASE008: Anthropic Multi-Agent Experiments and a Private Four-Layer Full Spectrum Observer](./case-studies/case008-anthropic-multi-agent-private-observer.md) · [中文版](./case-studies/case008-anthropic-multi-agent-private-observer.zh-CN.md) — a non-normative design case applying a parallel, private Observer plane to public multi-agent experiments. The deployment is independently synthesized, not implemented as described, not validated, and not affiliated with Anthropic.
 - [AI Ecosystem Fragmentation and Governance Interoperability (Chinese)](./working-papers/ai-ecosystem-governance-interoperability.zh-CN.md) — a non-normative strategic research note on minimum shared governance semantics, verifiable evidence, and bounded responsibility across autonomous AI ecosystems. It is not peer reviewed and makes no claim that a cross-network runtime is deployed.
 - [WP-001: Governance Semantics and a Local-First Observer Engine](./working-papers/wp-001-governance-semantics-and-local-observer-engine.md) — public working paper grounded in the current protocol and engine repositories.
 - [Legacy manuscript editorial review](./working-papers/legacy-manuscript-review.md) — publication decisions for older theory manuscripts.
