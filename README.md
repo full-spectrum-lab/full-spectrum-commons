@@ -1,7 +1,7 @@
 # Full Spectrum Commons
 
 > Created at: 2026-07-08 19:12 UTC+8 (based on the first Git commit)
-> Last updated at: 2026-08-24 22:13 UTC+8
+> Last updated at: 2026-08-25 03:45 UTC+8
 
 [![Full Spectrum system master map](./diagrams/product-views/full-spectrum-system-master-map-en-v01.png)](./docs/visual-index.md)
 
@@ -94,6 +94,7 @@ If you are new to Full Spectrum:
 ## Research and public writing
 
 - [Citation metadata](./CITATION.cff) provides a standard GitHub citation entry; cite the exact release or commit used.
+- [CASE008: Anthropic Multi-Agent Experiments and a Private Four-Layer Full Spectrum Observer](./research/case-studies/case008-anthropic-multi-agent-private-observer.md) · [中文版](./research/case-studies/case008-anthropic-multi-agent-private-observer.zh-CN.md) is a non-normative, independently synthesized deployment case based on public Anthropic materials. It is not an implementation record, validation result, affiliation, or endorsement.
 - [AI Ecosystem Fragmentation and Governance Interoperability (Chinese)](./research/working-papers/ai-ecosystem-governance-interoperability.zh-CN.md) is a non-normative research note on limited interoperability across autonomous AI ecosystems. It is not peer reviewed and does not claim a deployed cross-network runtime.
 - [WP-001: Governance Semantics and a Local-First Observer Engine](./research/working-papers/wp-001-governance-semantics-and-local-observer-engine.md) is a public working paper grounded in the current repositories. It is not peer reviewed.
 - [Legacy Manuscript Editorial Review](./research/working-papers/legacy-manuscript-review.md) records why older theory manuscripts are not presented as published evidence yet.
