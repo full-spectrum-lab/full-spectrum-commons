@@ -1,7 +1,7 @@
 # Full Spectrum Commons
 
 > Created at: 2026-07-08 19:12 UTC+8 (based on the first Git commit)
-> Last updated at: 2026-08-24 11:07 UTC+8
+> Last updated at: 2026-08-24 22:13 UTC+8
 
 [![Full Spectrum system master map](./diagrams/product-views/full-spectrum-system-master-map-en-v01.png)](./docs/visual-index.md)
 
@@ -73,6 +73,9 @@ Without a commons layer, the ecosystem becomes hard to navigate. This repository
 - [Full Spectrum Origins and Evidence Boundaries](./docs/public-writing-and-origins.md) · [全频谱来源与证据边界](./docs/public-writing-and-origins.zh-CN.md)
 - [Public Adoption Ladder](./docs/public-adoption-ladder.md)
 - [GitHub Stage-1 Community Plan](./docs/community-stage-1-github-plan.md)
+- [Full Spectrum Public Community](./docs/community/README.zh-CN.md)
+- [Community Charter](./docs/community/CHARTER.zh-CN.md)
+- [Community Roadmap](./docs/community/ROADMAP.zh-CN.md)
 
 ## Recommended reading path
 
