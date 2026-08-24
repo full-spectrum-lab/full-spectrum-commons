@@ -1,7 +1,7 @@
 # Start Here
 
 创建时间：2026-07-09 18:26（北京时间，UTC+8；依据 Git 首次提交）
-最后更新时间：2026-08-23 16:25（北京时间，UTC+8）
+最后更新时间：2026-08-24 11:07（北京时间，UTC+8）
 
 Quick public paths:
 
@@ -15,7 +15,7 @@ Quick public paths:
 - [Try an enterprise case](https://github.com/full-spectrum-lab/full-spectrum-enterprise-governance/blob/main/docs/try-it-locally.md)
 - [Read public research](./research/README.md)
 - [阅读《AI 生态分化时代的治理互操作》](./research/working-papers/ai-ecosystem-governance-interoperability.zh-CN.md)
-- [Read public writing and origins](./docs/public-writing-and-origins.md)
+- [Read Full Spectrum origins and evidence boundaries](./docs/public-writing-and-origins.md) · [阅读全频谱来源与证据边界](./docs/public-writing-and-origins.zh-CN.md)
 
 If this is your first time seeing Full Spectrum, use this short path.
 
