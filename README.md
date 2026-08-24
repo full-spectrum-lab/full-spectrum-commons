@@ -1,7 +1,7 @@
 # Full Spectrum Commons
 
 > Created at: 2026-07-08 19:12 UTC+8 (based on the first Git commit)
-> Last updated at: 2026-08-23 16:25 UTC+8
+> Last updated at: 2026-08-24 11:07 UTC+8
 
 [![Full Spectrum system master map](./diagrams/product-views/full-spectrum-system-master-map-en-v01.png)](./docs/visual-index.md)
 
@@ -70,7 +70,7 @@ Without a commons layer, the ecosystem becomes hard to navigate. This repository
 - [Evidence and Project Status](./docs/evidence-and-status.md)
 - [Holographic Governance Architecture Fact Baseline](./docs/holographic-governance-architecture-fact-baseline.md)
 - [Research Index](./research/README.md)
-- [Public Writing and Origins](./docs/public-writing-and-origins.md)
+- [Full Spectrum Origins and Evidence Boundaries](./docs/public-writing-and-origins.md) · [全频谱来源与证据边界](./docs/public-writing-and-origins.zh-CN.md)
 - [Public Adoption Ladder](./docs/public-adoption-ladder.md)
 - [GitHub Stage-1 Community Plan](./docs/community-stage-1-github-plan.md)
 
@@ -94,7 +94,7 @@ If you are new to Full Spectrum:
 - [AI Ecosystem Fragmentation and Governance Interoperability (Chinese)](./research/working-papers/ai-ecosystem-governance-interoperability.zh-CN.md) is a non-normative research note on limited interoperability across autonomous AI ecosystems. It is not peer reviewed and does not claim a deployed cross-network runtime.
 - [WP-001: Governance Semantics and a Local-First Observer Engine](./research/working-papers/wp-001-governance-semantics-and-local-observer-engine.md) is a public working paper grounded in the current repositories. It is not peer reviewed.
 - [Legacy Manuscript Editorial Review](./research/working-papers/legacy-manuscript-review.md) records why older theory manuscripts are not presented as published evidence yet.
-- [Public Writing and Origins](./docs/public-writing-and-origins.md) links the Douban book, Zhihu column, and official website while separating narrative background from normative specifications.
+- [Full Spectrum Origins and Evidence Boundaries](./docs/public-writing-and-origins.md) · [全频谱来源与证据边界](./docs/public-writing-and-origins.zh-CN.md) trace the bounded path from lived experience and public writing to FSHI, Engine and Observer without treating narrative history as implementation evidence.
 
 ## Public boundary
 
