@@ -7,6 +7,7 @@ runtime: Python 3.10+
 dependencies: standard-library-only
 research_basis: research/ai-governance/FS-RESEARCH-002-从治理互操作性假设到可运行验证.md
 source_commit: ee00c3f
+build_commit: 1de7211
 result_status: UNKNOWN
 independent_reverification: NOT_EXECUTED
 production_ready: NO
