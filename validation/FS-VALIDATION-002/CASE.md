@@ -1,5 +1,21 @@
 # CASE-X：跨节点订单建议
 
+文档编号：`VALIDATION-002-01`
+
+主要作者：Codex
+
+复核作者：PENDING
+
+创建时间：2026-09-02 04:12（北京时间，UTC+8）
+
+最后更新时间：2026-09-02 04:12（北京时间，UTC+8）
+
+文档状态：`IN_REVIEW`
+
+事实基线：Commons 提交 `1dc64e9`
+
+批准人：PENDING
+
 Node A 使用知识版本 `v2`，能力为 `recommend`；Node B 使用知识版本 `v1`，能力为 `execute-order`。
 
 注入冲突：

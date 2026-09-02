@@ -24,8 +24,13 @@ def main():
               "not_proven": ["global governance necessity", "production readiness", "security against real agents"]}
     out = ROOT / "results" / "validation-result.json"
     out.parent.mkdir(parents=True, exist_ok=True)
-    out.write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    print(json.dumps(result, ensure_ascii=False, indent=2))
+    rendered = json.dumps(result, ensure_ascii=False, indent=2) + "\n"
+    out.write_text(rendered, encoding="utf-8")
+    import hashlib
+    (out.parent / "RESULT-SHA256.txt").write_text(
+        hashlib.sha256(rendered.encode("utf-8")).hexdigest() + "  validation-result.json\n",
+        encoding="utf-8")
+    print(rendered, end="")
 
 
 if __name__ == "__main__":
