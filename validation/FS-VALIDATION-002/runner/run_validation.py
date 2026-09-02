@@ -25,11 +25,11 @@ def main():
     out = ROOT / "results" / "validation-result.json"
     out.parent.mkdir(parents=True, exist_ok=True)
     rendered = json.dumps(result, ensure_ascii=False, indent=2) + "\n"
-    out.write_text(rendered, encoding="utf-8")
+    out.write_text(rendered, encoding="utf-8", newline="")
     import hashlib
+    actual_hash = hashlib.sha256(out.read_bytes()).hexdigest()
     (out.parent / "RESULT-SHA256.txt").write_text(
-        hashlib.sha256(rendered.encode("utf-8")).hexdigest() + "  validation-result.json\n",
-        encoding="utf-8")
+        actual_hash + "  validation-result.json\n", encoding="utf-8", newline="")
     print(rendered, end="")
 
 
