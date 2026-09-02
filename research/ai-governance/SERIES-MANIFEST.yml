@@ -1,0 +1,23 @@
+series_id: FS-RESEARCH
+series_name_en: Full Spectrum AI Governance Research Series
+series_name_zh: 全频谱 AI 治理基础研究系列
+version: 0.1
+status: PUBLIC_RESEARCH_DRAFT
+normative: false
+principle: Verify, do not infer
+documents:
+  - FS-RESEARCH-000
+  - FS-RESEARCH-001
+  - FS-RESEARCH-002
+  - FS-RESEARCH-003
+  - FS-RESEARCH-004
+  - FS-RESEARCH-005
+  - FS-RESEARCH-006
+  - FS-RESEARCH-007
+  - FS-RESEARCH-008
+  - FS-RESEARCH-009
+  - FS-RESEARCH-010
+predecessors:
+  - FS-GI-001
+  - WP-001
+  - Civilization Systems Architecture research line
