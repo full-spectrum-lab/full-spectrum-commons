@@ -1,0 +1,32 @@
+{
+  "validation_id": "FS-VALIDATION-002",
+  "case_id": "CASE-X",
+  "status": "EXPERIMENTAL",
+  "conditions": {
+    "A": {
+      "boundary": "UNKNOWN",
+      "evidence": "UNKNOWN",
+      "responsibility": "UNKNOWN",
+      "human_review": "REQUIRED"
+    },
+    "B": {
+      "boundary": "FAIL",
+      "evidence": "FAIL",
+      "responsibility": "UNKNOWN",
+      "human_review": "REQUIRED"
+    },
+    "C": {
+      "boundary": "PASS",
+      "evidence": "UNKNOWN",
+      "responsibility": "PASS",
+      "human_review": "REQUIRED"
+    }
+  },
+  "overall": "UNKNOWN",
+  "interpretation": "C improves boundary and responsibility visibility in this synthetic case; evidence completeness remains UNKNOWN.",
+  "not_proven": [
+    "global governance necessity",
+    "production readiness",
+    "security against real agents"
+  ]
+}
