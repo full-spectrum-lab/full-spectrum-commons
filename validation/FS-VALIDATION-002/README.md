@@ -1,5 +1,9 @@
 # FS-VALIDATION-002：双节点治理互操作验证
 
+**交付类型：`EXECUTABLE DECLARATIVE PROTOTYPE / DECLARATIVE_STUB`**
+
+本运行器使用声明式预设结果验证交付结构、输出格式和可重复性，不是完整的双节点治理模拟，也不测量真实治理效果。
+
 文档编号：`VALIDATION-002-00`
 
 主要作者：Codex
