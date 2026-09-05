@@ -24,7 +24,7 @@ Get-FileHash .\validation\FS-VALIDATION-006-final\FS-VALIDATION-006-v0.4.zip -Al
 3266e2461c2acfcb94b14d692e7d3a0e4a01e8a3c199e6f31abbb6547e4d6031
 ```
 
-也可直接查看仓库中的 [FS-VALIDATION-006-v0.4.zip](https://github.com/full-spectrum-lab/full-spectrum-commons/blob/main/validation/FS-VALIDATION-006-final/FS-VALIDATION-006-v0.4.zip)。大文件下载受 GitHub 策略影响时，以本目录的 GitHub 文件页及 `SHA256SUMS.txt` 为准；不得从非本目录来源补入证书或私钥。
+也可直接查看仓库中的 [FS-VALIDATION-006-v0.4.zip](https://github.com/full-spectrum-lab/full-spectrum-commons/blob/validation/fs-validation-006-v0.4-public/validation/FS-VALIDATION-006-final/FS-VALIDATION-006-v0.4.zip)。大文件下载受 GitHub 策略影响时，以本目录的 GitHub 文件页及 `SHA256SUMS.txt` 为准；不得从非本目录来源补入证书或私钥。
 
 ## 已回答的原始问题
 
