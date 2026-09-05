@@ -10,6 +10,22 @@
 
 本归档不是 `full-spectrum-observer` 正式产品包，不证明 Observer 自身业务联网或生产就绪。
 
+## 公开下载与校验
+
+本目录随 `full-spectrum-commons` GitHub 仓库公开发布。下载 ZIP 后，在仓库根目录执行：
+
+```text
+Get-FileHash .\validation\FS-VALIDATION-006-final\FS-VALIDATION-006-v0.4.zip -Algorithm SHA256
+```
+
+期望值：
+
+```text
+3266e2461c2acfcb94b14d692e7d3a0e4a01e8a3c199e6f31abbb6547e4d6031
+```
+
+也可直接查看仓库中的 [FS-VALIDATION-006-v0.4.zip](https://github.com/full-spectrum-lab/full-spectrum-commons/blob/main/validation/FS-VALIDATION-006-final/FS-VALIDATION-006-v0.4.zip)。大文件下载受 GitHub 策略影响时，以本目录的 GitHub 文件页及 `SHA256SUMS.txt` 为准；不得从非本目录来源补入证书或私钥。
+
 ## 已回答的原始问题
 
 在受控的两台 Windows 主机环境中，能否通过指定防火墙和 TLS/mTLS 建立安全连接，并在关键错误下安全拒绝？答案为：核心场景已获得 PASS 证据。
