@@ -13,6 +13,7 @@ This directory is the public research index for Full Spectrum Lab.
 
 ## Current publications
 
+- [FDE and Agent Lifecycle Governance](./working-papers/fde-agent-lifecycle-governance.md) · [中文版](./working-papers/fde-agent-lifecycle-governance.zh-CN.md) — a non-normative working paper on how Full Spectrum can make forward-deployed Agent delivery more governable, reproducible, and transferable. It does not predict that FDE projects inevitably fail.
 - [AI Ecosystem Fragmentation and Governance Interoperability (Chinese)](./working-papers/ai-ecosystem-governance-interoperability.zh-CN.md) — a non-normative strategic research note on minimum shared governance semantics, verifiable evidence, and bounded responsibility across autonomous AI ecosystems. It is not peer reviewed and makes no claim that a cross-network runtime is deployed.
 - [WP-001: Governance Semantics and a Local-First Observer Engine](./working-papers/wp-001-governance-semantics-and-local-observer-engine.md) — public working paper grounded in the current protocol and engine repositories.
 - [Legacy manuscript editorial review](./working-papers/legacy-manuscript-review.md) — publication decisions for older theory manuscripts.
