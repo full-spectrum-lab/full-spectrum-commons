@@ -1,5 +1,9 @@
 # Diagrams Index
 
+> Created at: 2026-07-08 22:23 UTC+8 (based on the first Git commit)
+>
+> Last updated at: 2026-09-10 11:00 UTC+8
+
 This directory stores public visual assets that can be referenced by other Full Spectrum Lab repositories.
 
 ## Canonical product views

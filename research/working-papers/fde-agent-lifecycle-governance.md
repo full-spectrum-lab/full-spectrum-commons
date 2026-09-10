@@ -4,6 +4,9 @@
 **Status:** Non-normative, not peer reviewed  
 **Date:** 2026-09-09  
 **Author:** Full Spectrum Lab / Codex draft  
+AUTHOR_DECLARED_CREATED_AT: 2026-09-09 14:00 UTC+8
+
+AUTHOR_DECLARED_UPDATED_AT: 2026-09-10 11:00 UTC+8
 
 ## Abstract
 

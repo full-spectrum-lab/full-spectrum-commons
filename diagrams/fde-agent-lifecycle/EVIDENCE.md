@@ -1,5 +1,9 @@
 # FDE lifecycle infographic evidence index
 
+> AUTHOR_DECLARED_CREATED_AT: 2026-09-10 10:54 UTC+8
+>
+> AUTHOR_DECLARED_UPDATED_AT: 2026-09-10 11:00 UTC+8
+
 This index binds the dated capability diagram to public repository evidence. The diagrams are navigation aids; the linked commits, CI run, manifests, and compatibility decisions remain authoritative.
 
 Generated metadata is stored in [`generated-status-metadata.json`](./generated-status-metadata.json). Its `status_source_sha256` binds every rendered image to [`source/status-source.json`](./source/status-source.json).
@@ -24,4 +28,3 @@ REAL_NETWORK_IMPLEMENTATION = NOT_IMPLEMENTED
 REAL_NETWORK_AUTHORIZATION = NOT_AUTHORIZED
 PRODUCTION_READY = NO
 ```
-
