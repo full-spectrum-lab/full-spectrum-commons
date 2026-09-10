@@ -29,9 +29,21 @@ This repository keeps:
   - Use for: explaining how Full Spectrum extends FDE delivery into governed Agent lifecycle operation and handover.
   - Status: conceptual governance map; risk windows are review hypotheses, not predictions that FDE projects inevitably fail.
 
+- `fde-agent-lifecycle-governance-en-v01.png`
+  - Use for: the English public version of the FDE lifecycle governance concept map.
+
 - `full-spectrum-fde-capability-matrix-zh-v01.png`
   - Use for: showing the evidence-bounded Full Spectrum implementation status relevant to FDE lifecycle governance.
   - Status: dated non-normative navigation; repository commits, CI evidence and formal compatibility decisions remain authoritative.
+
+- `full-spectrum-fde-capability-matrix-en-v01.png`
+  - Use for: the English public version of the dated capability matrix.
+
+- `fde-governed-change-scenario-zh-v01.png` / `fde-governed-change-scenario-en-v01.png`
+  - Use for: showing a business-realistic synthetic refund-policy change through Observer, Engine, KG, named human approval, and replay.
+  - Status: designed scenario, not production validated and not evidence of a named customer deployment.
+
+Editable HTML sources, the machine-readable status source, validation, and rendering scripts are retained under `fde-agent-lifecycle/source/`. [`EVIDENCE.md`](./fde-agent-lifecycle/EVIDENCE.md) maps diagram reference IDs to repository commits and CI evidence. [`generated-status-metadata.json`](./fde-agent-lifecycle/generated-status-metadata.json) records the generated time, facts date, QPP baseline commit, and SHA-256 of the status source.
 
 ### public-intro
 

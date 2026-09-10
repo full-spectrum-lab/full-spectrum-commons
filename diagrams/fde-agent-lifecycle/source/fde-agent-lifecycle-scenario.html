@@ -1,0 +1,31 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><title>FDE Governed Change Scenario</title><link rel="stylesheet" href="fde-shared.css"></head><body>
+<section class="page" id="scenario-zh"><header><div><h1>一次现场规则变化，如何变成可治理的 Agent 变更</h1><p>业务真实型合成场景：退款政策更新后的判断、批准与回放</p></div><div class="header-mark">SYNTHETIC SCENARIO<br>DESIGNED FLOW<br>NOT PRODUCTION VALIDATED<br>更新 <span data-meta="rendered-at">2026-09-10 10:48</span></div></header><main>
+<span class="scenario-label">场景：企业将“签收后 7 天可自动退款”调整为“高风险商品必须人工复核”</span>
+<div class="flow">
+  <div class="flow-node"><h3>1. 现场规则变化</h3><div class="role">企业责任人 + FDE</div><p><strong>输入：</strong>已批准的新退款政策</p><p><strong>绑定：</strong>生效时间、负责人、影响范围</p><p><strong>禁止：</strong>口头通知直接覆盖旧规则</p></div>
+  <div class="flow-node observer"><h3>2. Observer</h3><div class="role">受控现实输入</div><p>采集已授权政策变更和待处理订单事实。</p><p>保留来源，不把观察事实改写成业务判断。</p><p><strong>输出：</strong>无损证据投影</p></div>
+  <div class="flow-node engine"><h3>3. Engine</h3><div class="role">契约约束内计算</div><p>按固定模型、策略和错误语义评估订单。</p><p>识别“高风险商品”，返回人工复核要求。</p><p><strong>输出：</strong>建议，不直接退款</p></div>
+  <div class="flow-node kg"><h3>4. KG</h3><div class="role">知识快照与审计</div><p>保存新旧政策快照、父子版本和决策引用。</p><p>持久化输入、结果和摘要；篡改时失败关闭。</p><p><strong>输出：</strong>审计 envelope</p></div>
+  <div class="flow-node human"><h3>5. 人工批准</h3><div class="role">命名的业务责任人</div><p>复核订单事实、政策版本和 Agent 建议。</p><p>批准、拒绝或要求补证；责任不转移给 Agent。</p><p><strong>输出：</strong>签署的决定</p></div>
+  <div class="flow-node replay"><h3>6. 回放与交接</h3><div class="role">后续团队 / 审计</div><p>按当时提交、知识快照和授权重建判断。</p><p>比较变更前后结果，并解释差异来自哪里。</p><p><strong>输出：</strong>可复核交接</p></div>
+</div>
+<div class="evidence-strip"><div><strong>身份锚点</strong>Agent、模型、策略、工具、提交</div><div><strong>知识锚点</strong>政策来源、版本、快照、生效时间</div><div><strong>授权锚点</strong>观察、建议、执行和写回权限分离</div><div><strong>证据锚点</strong>原始输出、退出码、摘要、限制和人工签署</div></div>
+<h2 class="section-title" style="margin-top:24px"><span class="num">!</span>失败关闭规则</h2>
+<div class="two-col"><div class="panel amber"><h3>缺少知识快照、授权或审计持久化</h3><p style="font-size:16px;line-height:1.5;margin:0">不得把 Agent 建议升级为可执行结果；保留 `UNKNOWN / BLOCKED` 和原始失败证据。</p></div><div class="panel blue"><h3>政策再次变化或人员交接</h3><p style="font-size:16px;line-height:1.5;margin:0">触发重新验证；历史结果不覆盖，新团队必须能重建当时上下文。</p></div></div>
+</main><footer>FDE 负责把变化带入系统；Full Spectrum 负责让变化有身份、有边界、有证据、有人批准、能够回放。</footer></section>
+
+<section class="page" id="scenario-en"><header><div><h1>Turning a Field Policy Change into a Governed Agent Change</h1><p>Business-realistic synthetic scenario: refund-policy evaluation, approval, and replay</p></div><div class="header-mark">SYNTHETIC SCENARIO<br>DESIGNED FLOW<br>NOT PRODUCTION VALIDATED<br>Updated <span data-meta="rendered-at">2026-09-10 10:48</span></div></header><main>
+<span class="scenario-label">Scenario: “automatic refund within seven days” changes to “high-risk products require human review”</span>
+<div class="flow">
+  <div class="flow-node"><h3>1. Field change</h3><div class="role">Enterprise owner + FDE</div><p><strong>Input:</strong> approved refund policy</p><p><strong>Bind:</strong> effective time, owner, affected scope</p><p><strong>Reject:</strong> verbal change overwriting history</p></div>
+  <div class="flow-node observer"><h3>2. Observer</h3><div class="role">Bounded reality input</div><p>Captures the authorized policy change and order facts.</p><p>Preserves sources without turning observations into business decisions.</p><p><strong>Output:</strong> lossless evidence projection</p></div>
+  <div class="flow-node engine"><h3>3. Engine</h3><div class="role">Contract-bound compute</div><p>Evaluates the order using pinned model, policy, and error semantics.</p><p>Detects high-risk products and requires human review.</p><p><strong>Output:</strong> advice, not a refund action</p></div>
+  <div class="flow-node kg"><h3>4. KG</h3><div class="role">Knowledge snapshot & audit</div><p>Stores old/new policy snapshots, lineage, and decision references.</p><p>Persists inputs, result, and digest; tampering fails closed.</p><p><strong>Output:</strong> audit envelope</p></div>
+  <div class="flow-node human"><h3>5. Human approval</h3><div class="role">Named business owner</div><p>Reviews order facts, policy version, and Agent advice.</p><p>Approves, rejects, or requests evidence; responsibility stays human.</p><p><strong>Output:</strong> signed decision</p></div>
+  <div class="flow-node replay"><h3>6. Replay & handover</h3><div class="role">Successor team / audit</div><p>Rebuilds the decision using original commits, snapshot, and authority.</p><p>Compares before/after results and explains the cause of change.</p><p><strong>Output:</strong> reviewable handover</p></div>
+</div>
+<div class="evidence-strip"><div><strong>Identity anchor</strong>Agent, model, policy, tool, commit</div><div><strong>Knowledge anchor</strong>Policy source, version, snapshot, effective time</div><div><strong>Authority anchor</strong>Observe, advise, execute, and writeback are separate</div><div><strong>Evidence anchor</strong>Raw output, exit code, digest, limitations, human signature</div></div>
+<h2 class="section-title" style="margin-top:24px"><span class="num">!</span>Fail-closed rules</h2>
+<div class="two-col"><div class="panel amber"><h3>Missing snapshot, authority, or audit persistence</h3><p style="font-size:16px;line-height:1.5;margin:0">Do not promote Agent advice into an executable result. Preserve `UNKNOWN / BLOCKED` and raw failure evidence.</p></div><div class="panel blue"><h3>Policy changes again or ownership transfers</h3><p style="font-size:16px;line-height:1.5;margin:0">Trigger re-verification. Preserve history and require the successor team to rebuild the original context.</p></div></div>
+</main><footer>FDE brings change into the system; Full Spectrum gives that change identity, boundaries, evidence, human approval, and replay.</footer></section>
+</body></html>

@@ -89,7 +89,7 @@
         <h1>从现场交付到生命周期治理</h1>
         <p>Full Spectrum 如何赋能 FDE 型 Agent 系统</p>
       </div>
-      <div class="header-mark">FDE × Agent Governance<br>概念与方法图</div>
+      <div class="header-mark">FDE × Agent Governance<br>概念与方法图<br>更新 <span data-meta="rendered-at">2026-09-10 10:48</span></div>
     </header>
     <main>
       <h2 class="section-title"><span class="num">1</span>FDE 的优势，与交付之后的新问题</h2>
@@ -139,7 +139,7 @@
         <h1>FDE 生命周期治理能力矩阵</h1>
         <p>Full Spectrum 当前做到哪里，下一道门禁是什么</p>
       </div>
-      <div class="header-mark">状态截至 2026-09-09<br>非规范性导航</div>
+      <div class="header-mark">事实截至 <span data-meta="facts-as-of">2026-09-09</span><br>非规范性导航<br>基线 <span data-meta="baseline-short">8428282F3D93</span></div>
     </header>
     <main style="padding-top:22px">
       <div class="legend">
@@ -153,42 +153,42 @@
       <div class="matrix-row">
         <div><div class="cap">契约与错误语义</div><div class="owner">Protocol</div></div>
         <div><span class="status pass">ENGINE 2 CONTRACT · FROZEN</span></div>
-        <div class="cell">Schema、错误码、RFC 8785、fixture</div>
+        <div class="cell">Schema、错误码、RFC 8785、fixture <strong>[P1, P2]</strong></div>
         <div class="cell muted">冻结契约不等于实现、兼容或生产</div>
         <div class="cell">持续做漂移检查</div>
       </div>
       <div class="matrix-row">
         <div><div class="cap">受控离线计算</div><div class="owner">Engine</div></div>
         <div><span class="status pass">OFFLINE PREFLIGHT · PASS</span></div>
-        <div class="cell">固定提交、回归、canonical fixture</div>
+        <div class="cell">固定提交、回归、canonical fixture <strong>[E1, P3]</strong></div>
         <div class="cell muted">未证明真实网络和生产负载</div>
         <div class="cell">真实网络另立授权门禁</div>
       </div>
       <div class="matrix-row">
         <div><div class="cap">受控观察输入</div><div class="owner">Observer</div></div>
         <div><span class="status scope">LOCAL OFFLINE REVERIFY · PASS</span></div>
-        <div class="cell">固定 Engine、离线回归与投影证据</div>
+        <div class="cell">固定 Engine、离线回归与投影证据 <strong>[O1, Q1]</strong></div>
         <div class="cell muted">正式 Observer–Engine 兼容未裁决</div>
         <div class="cell">单独兼容性裁决</div>
       </div>
       <div class="matrix-row">
         <div><div class="cap">知识、审计与回放</div><div class="owner">Knowledge Governance</div></div>
         <div><span class="status scope">INDEPENDENT LOCAL OFFLINE · PASS</span></div>
-        <div class="cell">147/147、SQLite 持久化、篡改失败关闭</div>
+        <div class="cell">147/147、SQLite 持久化、篡改失败关闭 <strong>[K1, Q1]</strong></div>
         <div class="cell muted">完整 GAP 和正式 Engine–KG 兼容未确认</div>
         <div class="cell">继续 H1–H3 与兼容裁决</div>
       </div>
       <div class="matrix-row">
         <div><div class="cap">观察→计算→审计→回放</div><div class="owner">三仓离线运行链</div></div>
         <div><span class="status scope">PINNED LOCAL OFFLINE · PASS</span></div>
-        <div class="cell">固定提交运行链、SQLite 重开回放、干净检出复验</div>
+        <div class="cell">固定提交运行链、SQLite 重开回放、干净检出复验 <strong>[P3, Q1]</strong></div>
         <div class="cell muted">Protocol runner 做投影映射；不等于通用 E2E</div>
         <div class="cell">分别裁决三组兼容关系</div>
       </div>
       <div class="matrix-row">
         <div><div class="cap">真实网络与生产运营</div><div class="owner">企业责任人与运维门禁</div></div>
         <div><span class="status open">NOT IMPLEMENTED / NOT AUTHORIZED</span></div>
-        <div class="cell">当前无生产证据</div>
+        <div class="cell">当前无生产证据 <strong>[P2, Q1]</strong></div>
         <div class="cell muted">离线、fixture、案例证据不得升级生产状态</div>
         <div class="cell">凭据、网络、SLA、回滚和人工批准</div>
       </div>
@@ -200,10 +200,9 @@
         <div class="gate decision"><strong>正式兼容裁决</strong><span>三组关系仍需分别确认</span></div>
         <div class="gate future"><strong>真实网络与生产</strong><span>未实现、未授权、未就绪</span></div>
       </div>
-      <div class="note">证据基线：QPP `0e945d06…`、Protocol CI Run `34311655853` 及固定 Observer / Engine / KG 提交。图示不替代仓库 Commit、CI、证据包或人工高风险裁决。</div>
+      <div class="note">证据索引：同目录 EVIDENCE.md；状态源 SHA-256 <span data-meta="baseline-sha">8428282F3D931AAA4CA427381B1E65C89C761E8A89F1272C9F6BEF8B3263A83C</span>。图示不替代仓库 Commit、CI、证据包或人工高风险裁决。</div>
     </main>
     <footer>Full Spectrum 的成熟度不靠一句“完成”，而靠每一层状态都有证据、限制和下一门禁。</footer>
   </section>
 </body>
 </html>
-

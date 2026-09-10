@@ -11,6 +11,8 @@ Forward-deployed engineering (FDE) is valuable because it places engineering jud
 
 This is not a claim that FDE projects inevitably fail. It is a governance proposal for making successful field delivery more durable and independently maintainable.
 
+![From field delivery to lifecycle governance](../../diagrams/fde-agent-lifecycle/fde-agent-lifecycle-governance-en-v01.png)
+
 ## The lifecycle gap
 
 An FDE team can make a system useful quickly by learning local workflows and integrating the necessary tools. A production organization must later answer questions that are easy to miss during initial delivery:
@@ -81,9 +83,17 @@ An FDE-enabled agent project should be tested for whether it can:
 
 ## Current Full Spectrum boundary
 
+![Full Spectrum capability matrix for FDE lifecycle governance](../../diagrams/fde-agent-lifecycle/full-spectrum-fde-capability-matrix-en-v01.png)
+
 As of the dated repository evidence used for this draft, Full Spectrum has demonstrated a pinned local offline Observer-Engine-Knowledge Governance runtime chain and independent clean-checkout re-verification. Formal pairwise compatibility remains unconfirmed. Real-network implementation is not implemented or authorized, and production readiness remains `NO`.
 
 These limits identify the next engineering work rather than weakening the offline evidence.
+
+## Business-realistic synthetic walkthrough
+
+![A governed refund-policy change from field input through replay](../../diagrams/fde-agent-lifecycle/fde-governed-change-scenario-en-v01.png)
+
+The walkthrough is a designed synthetic scenario, not a claim of production deployment. It shows how an FDE-delivered policy change can preserve observation, computation, knowledge snapshots, human approval, and replay as separate responsibilities.
 
 ## Conclusion
 

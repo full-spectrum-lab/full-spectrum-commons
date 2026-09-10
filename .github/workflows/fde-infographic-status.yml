@@ -1,0 +1,26 @@
+name: FDE infographic status validation
+
+on:
+  push:
+    paths:
+      - "diagrams/fde-agent-lifecycle/**"
+      - ".github/workflows/fde-infographic-status.yml"
+  pull_request:
+    paths:
+      - "diagrams/fde-agent-lifecycle/**"
+      - ".github/workflows/fde-infographic-status.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  validate-status-source:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Validate status values, commits, limitations, and evidence references
+        run: node diagrams/fde-agent-lifecycle/source/validate-status.mjs
+

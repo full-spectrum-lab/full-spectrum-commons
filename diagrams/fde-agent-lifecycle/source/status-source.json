@@ -1,0 +1,119 @@
+{
+  "schema_version": "1.0",
+  "facts_as_of": "2026-09-09",
+  "source_status": "DATED_PUBLIC_SNAPSHOT",
+  "qpp_baseline_commit": "0e945d06b16c494ccfbeee7465c9cd4027ad7206",
+  "scope": "FDE_AGENT_LIFECYCLE_OFFLINE_GOVERNANCE",
+  "statuses": [
+    {
+      "id": "protocol_contract",
+      "owner": "Protocol",
+      "value": "ENGINE_2_CONTRACT_FROZEN",
+      "evidence_refs": ["P1", "P2"],
+      "limitations": ["Contract freeze does not prove implementation, compatibility, real-network operation, or production readiness."]
+    },
+    {
+      "id": "engine_offline",
+      "owner": "Engine",
+      "value": "OFFLINE_PREFLIGHT_PASS",
+      "evidence_refs": ["E1", "P3"],
+      "limitations": ["The verified scope is pinned local offline execution."]
+    },
+    {
+      "id": "observer_adapter",
+      "owner": "Observer",
+      "value": "LOCAL_OFFLINE_REVERIFY_PASS",
+      "evidence_refs": ["O1", "Q1"],
+      "limitations": ["Formal Observer-Engine and Observer-KG compatibility remain NOT_CONFIRMED."]
+    },
+    {
+      "id": "kg_adapter",
+      "owner": "Knowledge Governance",
+      "value": "INDEPENDENT_LOCAL_OFFLINE_PASS",
+      "evidence_refs": ["K1", "Q1"],
+      "limitations": ["Full B1/H1-H3 gap closure and formal Engine-KG compatibility remain NOT_PROVEN or NOT_CONFIRMED."]
+    },
+    {
+      "id": "three_repo_chain",
+      "owner": "Protocol / Observer / Engine / KG",
+      "value": "PASS_PINNED_LOCAL_OFFLINE",
+      "evidence_refs": ["P3", "Q1"],
+      "limitations": ["The Protocol runner maps the Observer projection into a KG envelope without reading the Engine private audit store.", "One fixed-fixture chain does not automatically confirm pairwise compatibility or general cross-repository E2E."]
+    },
+    {
+      "id": "formal_compatibility",
+      "owner": "Human compatibility decision",
+      "value": "NOT_CONFIRMED",
+      "evidence_refs": ["P2", "Q1"],
+      "limitations": ["Observer-Engine, Observer-KG, and Engine-KG require separate decisions."]
+    },
+    {
+      "id": "real_network",
+      "owner": "Enterprise authorization gate",
+      "value": "NOT_IMPLEMENTED_NOT_AUTHORIZED",
+      "evidence_refs": ["P2", "Q1"],
+      "limitations": ["Offline evidence cannot promote real-network status."]
+    },
+    {
+      "id": "production",
+      "owner": "Named human production approver",
+      "value": "NO",
+      "evidence_refs": ["P2", "Q1"],
+      "limitations": ["No current evidence supports production admission."]
+    }
+  ],
+  "evidence": [
+    {
+      "ref": "P1",
+      "label": "Protocol current status commit",
+      "repository": "full-spectrum-protocol",
+      "commit": "b96cb2b0adb35b3bd3c59550489d87b40fddedff",
+      "url": "https://github.com/full-spectrum-lab/full-spectrum-protocol/commit/b96cb2b0adb35b3bd3c59550489d87b40fddedff"
+    },
+    {
+      "ref": "P2",
+      "label": "Protocol compatibility matrix",
+      "repository": "full-spectrum-protocol",
+      "commit": "b96cb2b0adb35b3bd3c59550489d87b40fddedff",
+      "url": "https://github.com/full-spectrum-lab/full-spectrum-protocol/blob/b96cb2b0adb35b3bd3c59550489d87b40fddedff/COMPATIBILITY_MATRIX.json"
+    },
+    {
+      "ref": "P3",
+      "label": "Three-repository offline runtime CI",
+      "repository": "full-spectrum-protocol",
+      "commit": "761e9a03f13e8590d5961ce84ec99dccc75a26dd",
+      "ci_run_id": "34311655853",
+      "artifact_sha256": "F9AEBF458CBCF14451D1301A664425BB74D7CB2CDFD8A6481B5FDFDFA07632BB",
+      "url": "https://github.com/full-spectrum-lab/full-spectrum-protocol/actions/runs/34311655853"
+    },
+    {
+      "ref": "E1",
+      "label": "Engine 2 implementation boundary",
+      "repository": "full-spectrum-engine",
+      "commit": "11c6f83593a327457940c6b5832aa03aa50713ee",
+      "url": "https://gitee.com/full-spectrum/full-spectrum-engine/commit/11c6f83593a327457940c6b5832aa03aa50713ee"
+    },
+    {
+      "ref": "O1",
+      "label": "Observer Engine 2 evidence correction",
+      "repository": "full-spectrum-observer",
+      "commit": "98da9559b8076770d9b5471ba0fde2cac4a6fe3c",
+      "url": "https://gitee.com/full-spectrum/full-spectrum-observer/commit/98da9559b8076770d9b5471ba0fde2cac4a6fe3c"
+    },
+    {
+      "ref": "K1",
+      "label": "Knowledge Governance Engine 2 adapter",
+      "repository": "full-spectrum-knowledge-governance",
+      "commit": "869f61bd7bb970a2743058a52fe1e23570667028",
+      "url": "https://gitee.com/full-spectrum/full-spectrum-knowledge-governance/commit/869f61bd7bb970a2743058a52fe1e23570667028"
+    },
+    {
+      "ref": "Q1",
+      "label": "QPP independent runtime-chain reverify",
+      "repository": "qpp.wiki",
+      "commit": "0e945d06b16c494ccfbeee7465c9cd4027ad7206",
+      "url": "https://gitee.com/full-spectrum/qpp.wiki/commit/0e945d06b16c494ccfbeee7465c9cd4027ad7206"
+    }
+  ]
+}
+
