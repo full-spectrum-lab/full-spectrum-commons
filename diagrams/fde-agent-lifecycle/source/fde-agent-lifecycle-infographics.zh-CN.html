@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <title>FDE 与 Agent 生命周期治理</title>
+  <style>
+    :root {
+      --navy: #123b63;
+      --blue: #1769aa;
+      --cyan: #dff3f6;
+      --teal: #177c78;
+      --green: #2f855a;
+      --green-bg: #e5f5ec;
+      --amber: #a96312;
+      --amber-bg: #fff2d6;
+      --coral: #b83b3b;
+      --coral-bg: #fde7e4;
+      --ink: #162536;
+      --muted: #52677b;
+      --line: #cad8e5;
+      --surface: #f4f7fa;
+      --white: #ffffff;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; width: 1600px; background: #dce5ed; font-family: "Microsoft YaHei", "Noto Sans CJK SC", Arial, sans-serif; color: var(--ink); letter-spacing: 0; }
+    body { padding: 0; }
+    .page { width: 1600px; height: 1000px; background: var(--white); overflow: hidden; position: relative; }
+    .page + .page { margin-top: 32px; }
+    header { height: 152px; padding: 30px 56px 24px; background: var(--navy); color: white; display: flex; justify-content: space-between; align-items: flex-end; }
+    header h1 { margin: 0 0 10px; font-size: 39px; line-height: 1.18; font-weight: 800; }
+    header p { margin: 0; font-size: 19px; color: #d9e9f5; }
+    .header-mark { width: 166px; text-align: right; font-size: 15px; line-height: 1.6; color: #c7dced; }
+    main { padding: 25px 56px 64px; }
+    .section-title { display: flex; align-items: center; gap: 12px; margin: 0 0 15px; font-size: 23px; color: var(--navy); font-weight: 800; }
+    .num { width: 34px; height: 34px; border-radius: 50%; background: var(--blue); color: white; display: inline-flex; align-items: center; justify-content: center; font-size: 18px; flex: none; }
+    .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; }
+    .panel { border: 1px solid var(--line); border-radius: 8px; padding: 21px 25px; background: var(--surface); }
+    .panel.fde { border-top: 5px solid var(--blue); }
+    .panel.lifecycle { border-top: 5px solid var(--amber); }
+    .panel h3 { margin: 0 0 13px; font-size: 21px; color: var(--navy); }
+    ul { margin: 0; padding-left: 22px; }
+    li { margin: 7px 0; font-size: 17px; line-height: 1.45; }
+    .bridge { margin: 20px 0 17px; display: grid; grid-template-columns: repeat(6, 1fr); gap: 10px; }
+    .step { min-height: 132px; padding: 17px 13px; border: 1px solid var(--line); border-radius: 8px; background: white; position: relative; }
+    .step::after { content: ""; position: absolute; right: -10px; top: 61px; width: 10px; height: 2px; background: var(--line); }
+    .step:last-child::after { display: none; }
+    .step-tag { display: inline-flex; min-width: 44px; height: 26px; align-items: center; justify-content: center; border-radius: 4px; background: var(--cyan); color: var(--teal); font-size: 13px; font-weight: 800; }
+    .step h4 { margin: 11px 0 6px; font-size: 18px; color: var(--navy); }
+    .step p { margin: 0; font-size: 14px; line-height: 1.45; color: var(--muted); }
+    .timeline { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; margin-top: 13px; }
+    .time { min-height: 105px; padding: 15px 18px; color: var(--ink); border-top: 6px solid; background: var(--surface); }
+    .time:nth-child(1) { border-color: var(--blue); }
+    .time:nth-child(2) { border-color: var(--green); }
+    .time:nth-child(3) { border-color: #dc8b22; }
+    .time:nth-child(4) { border-color: #7355a7; }
+    .time strong { display: block; font-size: 18px; margin-bottom: 7px; }
+    .time span { display: block; font-size: 14px; line-height: 1.45; color: var(--muted); }
+    footer { position: absolute; bottom: 0; left: 0; right: 0; height: 55px; background: #e8f0f6; color: var(--navy); display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 17px; }
+    .matrix-header { display: grid; grid-template-columns: 250px 250px 300px 1fr 260px; gap: 0; background: var(--navy); color: white; border-radius: 7px 7px 0 0; overflow: hidden; }
+    .matrix-header div, .matrix-row > div { padding: 12px 15px; border-right: 1px solid var(--line); }
+    .matrix-header div { font-size: 14px; font-weight: 700; }
+    .matrix-row { display: grid; grid-template-columns: 250px 250px 300px 1fr 260px; min-height: 82px; border: 1px solid var(--line); border-top: 0; background: white; }
+    .matrix-row:nth-child(even) { background: #f7f9fb; }
+    .cap { font-size: 16px; font-weight: 800; color: var(--navy); }
+    .owner { margin-top: 4px; font-size: 13px; color: var(--muted); }
+    .status { display: inline-flex; padding: 6px 9px; border-radius: 5px; font-size: 13px; line-height: 1.25; font-weight: 800; }
+    .pass { background: var(--green-bg); color: var(--green); }
+    .scope { background: var(--amber-bg); color: var(--amber); }
+    .open { background: var(--coral-bg); color: var(--coral); }
+    .cell { font-size: 14px; line-height: 1.45; }
+    .cell.muted { color: var(--muted); }
+    .legend { display: flex; gap: 18px; justify-content: flex-end; margin: -8px 0 13px; font-size: 13px; color: var(--muted); }
+    .legend i { width: 10px; height: 10px; display: inline-block; margin-right: 6px; border-radius: 2px; }
+    .ladder { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-top: 17px; }
+    .gate { border-radius: 7px; padding: 14px 17px; min-height: 91px; color: white; }
+    .gate strong { display: block; font-size: 17px; margin-bottom: 7px; }
+    .gate span { font-size: 13px; line-height: 1.45; }
+    .gate.done { background: var(--blue); }
+    .gate.evidence { background: var(--green); }
+    .gate.decision { background: var(--amber); }
+    .gate.future { background: var(--coral); }
+    .note { margin-top: 12px; font-size: 13px; line-height: 1.45; color: var(--muted); }
+  </style>
+</head>
+<body>
+  <section class="page" id="concept">
+    <header>
+      <div>
+        <h1>从现场交付到生命周期治理</h1>
+        <p>Full Spectrum 如何赋能 FDE 型 Agent 系统</p>
+      </div>
+      <div class="header-mark">FDE × Agent Governance<br>概念与方法图</div>
+    </header>
+    <main>
+      <h2 class="section-title"><span class="num">1</span>FDE 的优势，与交付之后的新问题</h2>
+      <div class="two-col">
+        <div class="panel fde">
+          <h3>FDE 把速度和现场理解带入业务</h3>
+          <ul>
+            <li>快速理解真实业务、数据与组织约束</li>
+            <li>缩短从需求到系统可用的距离</li>
+            <li>推动 Agent 进入实际工作流</li>
+          </ul>
+        </div>
+        <div class="panel lifecycle">
+          <h3>Agent 上线后仍会持续变化</h3>
+          <ul>
+            <li>模型、知识、权限、人员和环境持续变化</li>
+            <li>原始 FDE 离场后，系统仍需可解释、可接手</li>
+            <li>历史决策必须按当时上下文复核，而不是按今天解释</li>
+          </ul>
+        </div>
+      </div>
+
+      <h2 class="section-title" style="margin-top:20px"><span class="num">2</span>Full Spectrum 补充的是可持续治理能力</h2>
+      <div class="bridge">
+        <div class="step"><span class="step-tag">身份</span><h4>精确绑定</h4><p>Agent、模型、策略、工具和版本</p></div>
+        <div class="step"><span class="step-tag">知识</span><h4>快照与来源</h4><p>当时用了哪版知识，如何演化</p></div>
+        <div class="step"><span class="step-tag">授权</span><h4>范围与撤销</h4><p>谁允许什么，何时过期或失效</p></div>
+        <div class="step"><span class="step-tag">边界</span><h4>受控计算</h4><p>观察、推断、建议和执行分开</p></div>
+        <div class="step"><span class="step-tag">证据</span><h4>审计与回放</h4><p>保存原始事实并可重建当时状态</p></div>
+        <div class="step"><span class="step-tag">责任</span><h4>交接与批准</h4><p>命名责任主体，保留人工门禁</p></div>
+      </div>
+
+      <h2 class="section-title"><span class="num">3</span>按生命周期设置复核窗口，而不是预测失败</h2>
+      <div class="timeline">
+        <div class="time"><strong>T+0～3 个月</strong><span>集成、权限、数据边界<br>失败关闭与回滚</span></div>
+        <div class="time"><strong>T+3～9 个月</strong><span>治理债、知识漂移<br>所有权与交接</span></div>
+        <div class="time"><strong>T+6～18 个月</strong><span>模型、人员、供应商<br>维护与升级</span></div>
+        <div class="time"><strong>T+12～24 个月</strong><span>续约、审计、退出<br>长期责任</span></div>
+      </div>
+    </main>
+    <footer>目标不是替代 FDE，而是让一次成功交付在变化之后仍然可识别、可复核、可回放、可交接。</footer>
+  </section>
+
+  <section class="page" id="matrix">
+    <header>
+      <div>
+        <h1>FDE 生命周期治理能力矩阵</h1>
+        <p>Full Spectrum 当前做到哪里，下一道门禁是什么</p>
+      </div>
+      <div class="header-mark">状态截至 2026-09-09<br>非规范性导航</div>
+    </header>
+    <main style="padding-top:22px">
+      <div class="legend">
+        <span><i style="background:var(--green)"></i>已有范围内证据</span>
+        <span><i style="background:var(--amber)"></i>通过但有范围限制</span>
+        <span><i style="background:var(--coral)"></i>未完成或未授权</span>
+      </div>
+      <div class="matrix-header">
+        <div>生命周期能力 / 责任域</div><div>当前状态</div><div>已有证据</div><div>严格边界</div><div>下一门禁</div>
+      </div>
+      <div class="matrix-row">
+        <div><div class="cap">契约与错误语义</div><div class="owner">Protocol</div></div>
+        <div><span class="status pass">ENGINE 2 CONTRACT · FROZEN</span></div>
+        <div class="cell">Schema、错误码、RFC 8785、fixture</div>
+        <div class="cell muted">冻结契约不等于实现、兼容或生产</div>
+        <div class="cell">持续做漂移检查</div>
+      </div>
+      <div class="matrix-row">
+        <div><div class="cap">受控离线计算</div><div class="owner">Engine</div></div>
+        <div><span class="status pass">OFFLINE PREFLIGHT · PASS</span></div>
+        <div class="cell">固定提交、回归、canonical fixture</div>
+        <div class="cell muted">未证明真实网络和生产负载</div>
+        <div class="cell">真实网络另立授权门禁</div>
+      </div>
+      <div class="matrix-row">
+        <div><div class="cap">受控观察输入</div><div class="owner">Observer</div></div>
+        <div><span class="status scope">LOCAL OFFLINE REVERIFY · PASS</span></div>
+        <div class="cell">固定 Engine、离线回归与投影证据</div>
+        <div class="cell muted">正式 Observer–Engine 兼容未裁决</div>
+        <div class="cell">单独兼容性裁决</div>
+      </div>
+      <div class="matrix-row">
+        <div><div class="cap">知识、审计与回放</div><div class="owner">Knowledge Governance</div></div>
+        <div><span class="status scope">INDEPENDENT LOCAL OFFLINE · PASS</span></div>
+        <div class="cell">147/147、SQLite 持久化、篡改失败关闭</div>
+        <div class="cell muted">完整 GAP 和正式 Engine–KG 兼容未确认</div>
+        <div class="cell">继续 H1–H3 与兼容裁决</div>
+      </div>
+      <div class="matrix-row">
+        <div><div class="cap">观察→计算→审计→回放</div><div class="owner">三仓离线运行链</div></div>
+        <div><span class="status scope">PINNED LOCAL OFFLINE · PASS</span></div>
+        <div class="cell">固定提交运行链、SQLite 重开回放、干净检出复验</div>
+        <div class="cell muted">Protocol runner 做投影映射；不等于通用 E2E</div>
+        <div class="cell">分别裁决三组兼容关系</div>
+      </div>
+      <div class="matrix-row">
+        <div><div class="cap">真实网络与生产运营</div><div class="owner">企业责任人与运维门禁</div></div>
+        <div><span class="status open">NOT IMPLEMENTED / NOT AUTHORIZED</span></div>
+        <div class="cell">当前无生产证据</div>
+        <div class="cell muted">离线、fixture、案例证据不得升级生产状态</div>
+        <div class="cell">凭据、网络、SLA、回滚和人工批准</div>
+      </div>
+
+      <h2 class="section-title" style="margin:17px 0 10px"><span class="num">4</span>阶段成熟度：能力可以前进，状态不能越级</h2>
+      <div class="ladder">
+        <div class="gate done"><strong>规则与契约</strong><span>已冻结并有机器校验</span></div>
+        <div class="gate evidence"><strong>离线运行证据</strong><span>固定提交链路与独立复验已通过</span></div>
+        <div class="gate decision"><strong>正式兼容裁决</strong><span>三组关系仍需分别确认</span></div>
+        <div class="gate future"><strong>真实网络与生产</strong><span>未实现、未授权、未就绪</span></div>
+      </div>
+      <div class="note">证据基线：QPP `0e945d06…`、Protocol CI Run `34311655853` 及固定 Observer / Engine / KG 提交。图示不替代仓库 Commit、CI、证据包或人工高风险裁决。</div>
+    </main>
+    <footer>Full Spectrum 的成熟度不靠一句“完成”，而靠每一层状态都有证据、限制和下一门禁。</footer>
+  </section>
+</body>
+</html>
+

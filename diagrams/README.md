@@ -23,6 +23,16 @@ This repository keeps:
 
 ## Current diagram groups
 
+### fde-agent-lifecycle
+
+- `fde-agent-lifecycle-governance-zh-v01.png`
+  - Use for: explaining how Full Spectrum extends FDE delivery into governed Agent lifecycle operation and handover.
+  - Status: conceptual governance map; risk windows are review hypotheses, not predictions that FDE projects inevitably fail.
+
+- `full-spectrum-fde-capability-matrix-zh-v01.png`
+  - Use for: showing the evidence-bounded Full Spectrum implementation status relevant to FDE lifecycle governance.
+  - Status: dated non-normative navigation; repository commits, CI evidence and formal compatibility decisions remain authoritative.
+
 ### public-intro
 
 - `from-ethical-appeal-to-engineering-compilation.png`

@@ -11,6 +11,8 @@ FDE 的价值在于让工程判断贴近客户现场，快速理解流程、数�
 
 本文不主张 FDE 项目必然失败。它提出的是一套让成功的现场交付更持久、更容易由后续团队独立维护的治理方法。
 
+![从现场交付到生命周期治理](../../diagrams/fde-agent-lifecycle/fde-agent-lifecycle-governance-zh-v01.png)
+
 ## 生命周期缺口
 
 FDE 可以通过现场学习和系统集成迅速创造价值，但长期运营仍需回答：
@@ -78,6 +80,8 @@ Full Spectrum 不替代 FDE 的现场判断、企业所有权、法律权力或�
 7. 将联网、凭据、写回和生产批准保留为独立门禁。
 
 ## Full Spectrum 当前边界
+
+![Full Spectrum 面向 FDE 的当前能力矩阵](../../diagrams/fde-agent-lifecycle/full-spectrum-fde-capability-matrix-zh-v01.png)
 
 截至本文采用的日期化仓库证据，Full Spectrum 已完成固定提交的本地离线 Observer-Engine-Knowledge Governance 运行链和独立干净检出复验。三组正式兼容仍未确认；真实网络未实现、未授权；生产就绪仍为 `NO`。
 
