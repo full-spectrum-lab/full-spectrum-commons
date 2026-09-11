@@ -17,6 +17,7 @@ Quick public paths:
 - [阅读《AI 生态分化时代的治理互操作》](./research/working-papers/ai-ecosystem-governance-interoperability.zh-CN.md)
 - [Read Full Spectrum origins and evidence boundaries](./docs/public-writing-and-origins.md) · [阅读全频谱来源与证据边界](./docs/public-writing-and-origins.zh-CN.md)
 - [进入 Full Spectrum 公共社区](./docs/community/README.zh-CN.md)
+- [参加赛事与社区协作（FDE-TRIAL-001）](./competition/shanghai-open-source-2026/README.md)
 
 If this is your first time seeing Full Spectrum, use this short path.
 
