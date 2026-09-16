@@ -1,7 +1,11 @@
 # Full Spectrum Research
 
 > Created at: 2026-07-12 09:58 UTC+8 (based on the first Git commit)
-> Last updated at: 2026-08-25 03:45 UTC+8
+> Last updated at: 2026-09-16 21:20 UTC+8
+
+> **RESEARCH / NON-NORMATIVE**
+>
+> This directory records working papers, research notes, conceptual models and provenance studies. It is not a protocol specification, Schema source, implementation record, Release statement or production-capability claim. When research language conflicts with a responsible repository's fixed code, contract, tests or Release Evidence, the responsible repository is authoritative for engineering behavior.
 
 ## Citation
 
@@ -29,6 +33,21 @@ This directory is the public research index for Full Spectrum Lab.
 - **Under Editorial Review**: not released as evidence; citations and claims are still being checked.
 - **Historical Archive**: retained for provenance only.
 
+## Claim labels for new research
+
+New material should label important claims with the narrowest applicable state:
+
+| Label | Meaning |
+|---|---|
+| `OBSERVED` | Directly supported by a cited public or repository source. |
+| `INTERPRETATION` | The author's bounded reading of observed material. |
+| `HYPOTHESIS` | A proposition that still requires validation. |
+| `PROPOSED` | A design direction, not an implemented feature. |
+| `IMPLEMENTED` | Code or Schema exists in the named repository and commit. |
+| `RUNTIME_VERIFIED` | A pinned execution and its Evidence verify the stated scope. |
+
+`IMPLEMENTED` and `RUNTIME_VERIFIED` require direct links to the responsible repository and exact evidence. A dream, metaphor, historical analogy, architecture diagram or AI-generated explanation cannot receive either label by itself.
+
 ## Research boundary
 
-Research papers do not override protocol specifications or runtime behavior. A mathematical analogy, simulated example, or conceptual framework is not evidence of production validity. Engineering claims must link to code, tests, schemas, or reproducible examples.
+Research papers do not override protocol specifications or runtime behavior. A mathematical analogy, simulated example, conceptual framework or project plan is not evidence of production validity. Engineering claims must link to code, tests, schemas, Releases or reproducible pinned execution evidence.
