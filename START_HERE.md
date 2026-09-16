@@ -1,11 +1,13 @@
 # Start Here
 
 创建时间：2026-07-09 18:26（北京时间，UTC+8；依据 Git 首次提交）
-最后更新时间：2026-08-24 22:13（北京时间，UTC+8）
+最后更新时间：2026-09-16 22:05（北京时间，UTC+8）
 
 Quick public paths:
 
 - [Start from your question](./docs/start-from-your-question.md) · [从你的问题开始](./docs/start-from-your-question.zh-CN.md)
+- [Public Architecture Map](./docs/public-architecture-map.md) · [公共架构图](./docs/public-architecture-map.zh-CN.md)
+- [One-page External Research Brief](./docs/full-spectrum-research-brief.md)
 - [Understand the four independent engineering tracks](./docs/four-independent-engineering-tracks.md)
 - [Inspect Observer](https://github.com/full-spectrum-lab/full-spectrum-observer)
 - [Inspect Knowledge Governance](https://github.com/full-spectrum-lab/full-spectrum-knowledge-governance)
@@ -14,6 +16,7 @@ Quick public paths:
 - [Inspect the protocol object chain](https://github.com/full-spectrum-lab/full-spectrum-protocol/tree/main/examples/cases/ecommerce_chain)
 - [Try an enterprise case](https://github.com/full-spectrum-lab/full-spectrum-enterprise-governance/blob/main/docs/try-it-locally.md)
 - [Read public research](./research/README.md)
+- [阅读七条观察路径](./research/civilization-systems-architecture/09_Full_Spectrum多尺度理解模型_七条观察路径.md)
 - [阅读《AI 生态分化时代的治理互操作》](./research/working-papers/ai-ecosystem-governance-interoperability.zh-CN.md)
 - [Read Full Spectrum origins and evidence boundaries](./docs/public-writing-and-origins.md) · [阅读全频谱来源与证据边界](./docs/public-writing-and-origins.zh-CN.md)
 - [进入 Full Spectrum 公共社区](./docs/community/README.zh-CN.md)
@@ -81,9 +84,9 @@ Start with these visual assets:
 Current public state:
 
 - `full-spectrum-protocol`: public preview of protocol definitions and schemas
-- `full-spectrum-engine`: local-first runnable governance runtime in early public preview
-- `full-spectrum-observer`: local-first Observer beta pre-release; production ready `NO`
-- `full-spectrum-knowledge-governance`: fixed-knowledge alpha pre-release; production ready `NO`
+- `full-spectrum-engine`: `v1.4.0` stable and `v1.5.0` enterprise-pilot candidate pre-release; production-complete governance is not claimed
+- `full-spectrum-observer`: `v0.4.0-beta` latest preview and `v0.3.0-maintenance.6` maintenance candidate; production ready `NO`
+- `full-spectrum-knowledge-governance`: `v0.2.0-alpha` Windows x64 pre-release candidate; production ready `NO`
 - `full-spectrum-enterprise-governance`: enterprise governance cases and deployment framing in public preview
 - `full-spectrum-commons`: shared maps, diagrams, and public navigation
 

@@ -1,7 +1,7 @@
 # Full Spectrum Research
 
 > Created at: 2026-07-12 09:58 UTC+8 (based on the first Git commit)
-> Last updated at: 2026-09-16 21:20 UTC+8
+> Last updated at: 2026-09-16 22:05 UTC+8
 
 > **RESEARCH / NON-NORMATIVE**
 >
@@ -23,6 +23,7 @@ This directory is the public research index for Full Spectrum Lab.
 - [Legacy manuscript editorial review](./working-papers/legacy-manuscript-review.md) — publication decisions for older theory manuscripts.
 - [Civilization Systems Architecture](./civilization-systems-architecture/README.md) — a Chinese-language, non-normative research series on continuity, memory, difference, correction, and bounded engineering implications. It is not peer reviewed and makes no implementation claim.
 - [From Chinese Civilization to Full Spectrum: Intellectual Genealogy and Engineering Translation](./civilization-systems-architecture/08_从中华文明到Full_Spectrum：思想谱系与工程翻译.md) — a non-normative provenance study separating intellectual influence, interpretation, proposed engineering mappings, and repository evidence.
+- [Full Spectrum Multi-scale Understanding Model: Seven Observation Paths](./civilization-systems-architecture/09_Full_Spectrum多尺度理解模型_七条观察路径.md) — a Chinese-language public-understanding model. The paths are parallel observation lenses, not cognitive ranks or engineering authority.
 - [Full Spectrum Origins and Evidence Boundaries](../docs/public-writing-and-origins.md) · [全频谱来源与证据边界](../docs/public-writing-and-origins.zh-CN.md) — a non-normative provenance entry that separates biographical and literary context from formulas, implementation and release evidence.
 - [AI 进入知识生产流程后的知识混乱与责任链断裂：公共案例观察](./working-papers/knowledge-confusion-and-account-evidence-case.zh-CN.md) — a non-normative note that verifies the referenced People.cn article and records the author's first-person account appeal evidence without claiming access to platform-internal logs.
 

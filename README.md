@@ -1,7 +1,18 @@
 # Full Spectrum Commons
 
 > Created at: 2026-07-08 19:12 UTC+8 (based on the first Git commit)
-> Last updated at: 2026-08-25 03:45 UTC+8
+> Last updated at: 2026-09-16 22:05 UTC+8
+
+## Public status header
+
+| Field | Value |
+|---|---|
+| `ROLE` | Public navigation, terminology, diagrams and non-normative research |
+| `STATUS` | Active public orientation repository |
+| `CURRENT_CAPABILITY` | Cross-repository maps, evidence vocabulary, research indexes and public entry paths |
+| `NOT_CLAIMED` | Normative protocol authority, runtime behavior or production readiness |
+| `PRODUCTION_READY` | Not applicable; Commons is not a production runtime |
+| `START_HERE` | [Public Architecture Map](./docs/public-architecture-map.md) · [中文](./docs/public-architecture-map.zh-CN.md) |
 
 [![Full Spectrum system master map](./diagrams/product-views/full-spectrum-system-master-map-en-v01.png)](./docs/visual-index.md)
 
@@ -61,6 +72,9 @@ Without a commons layer, the ecosystem becomes hard to navigate. This repository
 ## Start here
 
 - [Start from Your Question](./docs/start-from-your-question.md) · [从你的问题开始](./docs/start-from-your-question.zh-CN.md)
+- [Public Architecture Map](./docs/public-architecture-map.md) · [公共架构图](./docs/public-architecture-map.zh-CN.md)
+- [One-page External Research Brief](./docs/full-spectrum-research-brief.md)
+- [Independent Visitor Review](./docs/external-visitor-review.zh-CN.md)
 - [Four Independent Engineering Tracks](./docs/four-independent-engineering-tracks.md)
 - [START_HERE.md](./START_HERE.md)
 - [Ecosystem Map](./ECOSYSTEM.md)
@@ -70,6 +84,7 @@ Without a commons layer, the ecosystem becomes hard to navigate. This repository
 - [Evidence and Project Status](./docs/evidence-and-status.md)
 - [Holographic Governance Architecture Fact Baseline](./docs/holographic-governance-architecture-fact-baseline.md)
 - [Research Index](./research/README.md)
+- [Multi-scale Understanding Model: Seven Observation Paths](./research/civilization-systems-architecture/09_Full_Spectrum多尺度理解模型_七条观察路径.md)
 - [Full Spectrum Origins and Evidence Boundaries](./docs/public-writing-and-origins.md) · [全频谱来源与证据边界](./docs/public-writing-and-origins.zh-CN.md)
 - [Public Adoption Ladder](./docs/public-adoption-ladder.md)
 - [GitHub Stage-1 Community Plan](./docs/community-stage-1-github-plan.md)

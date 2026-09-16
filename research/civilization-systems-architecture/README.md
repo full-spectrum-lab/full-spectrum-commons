@@ -1,5 +1,9 @@
 # Civilization Systems Architecture
 
+Created at: 2026-08-19 02:48 UTC+8
+
+Last updated at: 2026-09-16 22:05 UTC+8
+
 Status: `RESEARCH_SERIES / NON_NORMATIVE / IN_REVIEW / NOT_IMPLEMENTED`
 
 This Chinese-language research series studies a bounded question: how can a long-running system change its institutions, knowledge, participants, and interpretations without losing every trace of identity, memory, responsibility, and meaning?
@@ -18,6 +22,7 @@ The series uses Chinese civilization as an initial case, not as proof of civiliz
 8. [Sources and Review Records](./sources/README.md)
 9. [研究证据与运行验证索引](./07_研究证据与运行验证索引.md)
 10. [从中华文明到 Full Spectrum：思想谱系与工程翻译](./08_从中华文明到Full_Spectrum：思想谱系与工程翻译.md)
+11. [Full Spectrum 多尺度理解模型：七条观察路径](./09_Full_Spectrum多尺度理解模型_七条观察路径.md)
 
 ## Evidence labels
 
