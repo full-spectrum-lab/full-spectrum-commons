@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="440" viewBox="0 0 1080 440" role="img" aria-labelledby="title desc">
+<title id="title">换一个观察角度，仍是同一个整体</title><desc id="desc">两幅魔方视图展示不同的三个面，中间的观察箭头说明这是改变观察角度，不是对魔方进行转层动作。六面颜色没有对应产品含义。</desc>
+<metadata>创建时间：2026-10-11 22:27；最后更新时间：2026-10-11 22:27；时区：Asia/Shanghai UTC+8；ID：FSP-GEX-CUBE-002；版本：v0.1-candidate；状态：DESIGNED / NON_NORMATIVE / CONCEPTUAL_ILLUSTRATION；作者：独立全局表达工作线；范围：原创视角比喻；基线：FSP-GLOBAL-BASELINE-1.0；QPP 1ebfcdfc7ceef9a9791891ea40c792596a94a1da。</metadata>
+<defs><pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse"><path d="M0 0H60V60H0Z" fill="none" stroke="#233947" stroke-width="6"/></pattern><g id="face"><rect width="180" height="180" fill="currentColor"/><rect width="180" height="180" fill="url(#grid)"/></g></defs>
+<rect width="1080" height="440" fill="#fff"/>
+<g font-family="Microsoft YaHei,sans-serif" fill="#203343"><text x="35" y="45" font-size="28">② 不同窗口，观察的是同一个整体</text><text x="35" y="77" font-size="18" fill="#536577">改变观察角度，不等于换了一个对象，也不等于改变对象状态。</text></g>
+<g transform="translate(140 167)"><use href="#face" color="#419784"/><use href="#face" color="#edc653" transform="matrix(1 0 .5 -.333 0 0)"/><use href="#face" color="#4c86bd" transform="matrix(.5 -.333 0 1 180 0)"/></g>
+<path d="M465 215Q535 135 610 210L607 185M610 210L584 206" fill="none" stroke="#6d8090" stroke-width="3"/>
+<text x="482" y="250" font-family="Microsoft YaHei,sans-serif" font-size="20" fill="#536577">换个角度看</text>
+<g transform="translate(700 167)"><use href="#face" color="#db6b61"/><use href="#face" color="#f2f0e5" transform="matrix(1 0 .5 -.333 0 0)"/><use href="#face" color="#dc934c" transform="matrix(.5 -.333 0 1 180 0)"/></g>
+<g font-family="Microsoft YaHei,sans-serif" fill="#203343" font-size="21"><text x="164" y="385">窗口A：这一侧的关系</text><text x="712" y="385">窗口B：另一侧的关系</text></g>
+<text x="35" y="426" font-family="Microsoft YaHei,sans-serif" font-size="16" fill="#536577">六面颜色仅用于辨认不同面，不映射四产品、六主题或L1—L4。</text>
+</svg>

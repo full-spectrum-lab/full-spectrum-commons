@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="440" viewBox="0 0 1080 440" role="img" aria-labelledby="title desc">
+<title id="title">转动一层，多个面的关系一起改变</title><desc id="desc">左侧为转动前，右侧为顶层转动后的概念状态。绿色正面顶排变为蓝色，蓝色侧面顶排变为红色。转动不是只修改一个面，连接处同时变化。此图不说明具体求解算法。</desc>
+<metadata>创建时间：2026-10-11 22:27；最后更新时间：2026-10-11 22:27；时区：Asia/Shanghai UTC+8；ID：FSP-GEX-CUBE-003；版本：v0.1-candidate；状态：DESIGNED / NON_NORMATIVE / CONCEPTUAL_ILLUSTRATION；作者：独立全局表达工作线；范围：原创关系联动比喻，非物理求解教程或业务动作模型；基线：FSP-GLOBAL-BASELINE-1.0；QPP 1ebfcdfc7ceef9a9791891ea40c792596a94a1da。</metadata>
+<defs><pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse"><path d="M0 0H60V60H0Z" fill="none" stroke="#233947" stroke-width="6"/></pattern><g id="face"><rect width="180" height="180" fill="currentColor"/><rect width="180" height="180" fill="url(#grid)"/></g></defs>
+<rect width="1080" height="440" fill="#fff"/>
+<g font-family="Microsoft YaHei,sans-serif" fill="#203343"><text x="35" y="45" font-size="28">③ 局部动作，会改变多个面的关系</text><text x="35" y="77" font-size="18" fill="#536577">与“换个角度看”不同：这次改变的是对象本身的状态。</text></g>
+<g transform="translate(140 167)"><use href="#face" color="#419784"/><use href="#face" color="#edc653" transform="matrix(1 0 .5 -.333 0 0)"/><use href="#face" color="#4c86bd" transform="matrix(.5 -.333 0 1 180 0)"/></g>
+<path d="M465 232H610L589 218M610 232L589 246" fill="none" stroke="#6d8090" stroke-width="3"/>
+<text x="475" y="202" font-family="Microsoft YaHei,sans-serif" font-size="20" fill="#536577">转动顶层</text>
+<g transform="translate(700 167)"><use href="#face" color="#419784"/><rect width="180" height="60" fill="#4c86bd"/><rect width="180" height="60" fill="url(#grid)"/><use href="#face" color="#edc653" transform="matrix(1 0 .5 -.333 0 0)"/><g transform="matrix(.5 -.333 0 1 180 0)"><use href="#face" color="#4c86bd"/><rect width="180" height="60" fill="#db6b61"/><rect width="180" height="60" fill="url(#grid)"/></g></g>
+<g font-family="Microsoft YaHei,sans-serif" fill="#203343" font-size="21"><text x="170" y="385">转动前：同色的面</text><text x="684" y="385">转动后：两个可见侧面顶排变化</text></g>
+<text x="35" y="426" font-family="Microsoft YaHei,sans-serif" font-size="16" fill="#536577">联动只用于解释关系敏感性；全频谱中的行动、权限与反馈仍须遵守实际合同。</text>
+</svg>

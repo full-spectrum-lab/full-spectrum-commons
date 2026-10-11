@@ -1,12 +1,17 @@
+创建时间：2026-09-16 22:05（Asia/Shanghai，UTC+8）
+最后更新时间：2026-10-11 23:58（Asia/Shanghai，UTC+8）
+文档编号：FS-COMMONS-PUBLIC-ARCH-MAP-ZH
+文档版本：v0.1-candidate-metadata；既有入口修订
+文档状态：PUBLIC_ORIENTATION / NON_NORMATIVE
+责任作者：Commons维护者；本次修订由独立全局表达工作线负责
+范围：产品职责阅读视角，不是完整运行时拓扑
+事实基线：Commons 8ae0ddb10662f8bc5cd42812e4d6d11f4c0322b3；QPP ff5c7677f5add1842b1caa9802b2c9de37d7fea9；FSP-GLOBAL-BASELINE-1.0
+
 # Full Spectrum 公共架构图
 
-创建时间：2026-09-16 22:05 UTC+8
-
-最后更新时间：2026-09-16 22:05 UTC+8
-
-文档状态：`PUBLIC_ORIENTATION / NON_NORMATIVE`
-
 这张图面向第一次接触 Full Spectrum 的读者。它解释各仓库分别回答什么问题，不是运行时拓扑、协议规范或已完成能力证明。
+
+下方箭头呈现一次行动的职责视角，不是必经产品管道或体系全部。理解局部循环、横向关系、相对尺度和现实反馈，可先读[整体与递归导读](./whole-system-and-recursion.zh-CN.md)，再看[合成退款教学例](./examples/refund-conflict-recursion.zh-CN.md)。既有图继续承担产品职责定位，不被新导读取代。
 
 ## 先看五个问题
 
