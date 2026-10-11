@@ -1,0 +1,62 @@
+[
+  {
+    "path": "ecommerce/enterprise-writeback.json",
+    "sha256": "63d80af4e3ad8f5cec617f95a545f62e2aa3a254b49ccab0efd37a5556bfdca4",
+    "size": 980
+  },
+  {
+    "path": "ecommerce/input.json",
+    "sha256": "65fb6b01a7e1d2d5c08c2a3864135ca216a07702f3bc011bbb4702eb07ca6b1f",
+    "size": 308
+  },
+  {
+    "path": "ecommerce/output-envelope.json",
+    "sha256": "45e05c320014381ee224d9a9571fb613f264f2346cb0237eb75f75bfae5446d6",
+    "size": 2321
+  },
+  {
+    "path": "logistics/enterprise-writeback.json",
+    "sha256": "18a4b0e60c1018810fb97e4054247523c9ab3b151243808d20ddbbdbe3a28936",
+    "size": 1004
+  },
+  {
+    "path": "logistics/input.json",
+    "sha256": "af960cf488725a2dbd027f2213d552753d08e826555a6a4a194c90cf104bca65",
+    "size": 275
+  },
+  {
+    "path": "logistics/output-envelope.json",
+    "sha256": "0ba82bc0ee59d22b5e869b2870735c12a0b1c6a7ac9491fff6e3db068ebb7c05",
+    "size": 2369
+  },
+  {
+    "path": "observer/output.json",
+    "sha256": "51a74d6ff458f3d48f82c7e04ed7c279826b79f789140ff96e364122edf9bf80",
+    "size": 6737
+  },
+  {
+    "path": "observer/reference-checks.json",
+    "sha256": "bb53e26cb26c571c3c929ba1afe739aaed52136a1a17d8f7624a0e52ad416070",
+    "size": 2066
+  },
+  {
+    "path": "observer/request.json",
+    "sha256": "876c438f4dafdc2b37c2e15e84edae495b0ab75272fb1a74221a7458f06a8b8c",
+    "size": 989
+  },
+  {
+    "path": "observer/response.json",
+    "sha256": "4fc5db74832c67cb2784ccb91da1188bcbb0d62155bf4e98368ad25ff0447c3f",
+    "size": 7080
+  },
+  {
+    "path": "observer/worker.stderr",
+    "sha256": "b2a0090845fd88ce1c4a8d20dddacaf1726d230a565eafaa227d24fc7352ef31",
+    "size": 79
+  },
+  {
+    "path": "run-record.json",
+    "sha256": "84bc2e9962c1f704ea1c11c06a77d99d042805a45d0ec2380e4902d407ba6365",
+    "size": 10590
+  }
+]
