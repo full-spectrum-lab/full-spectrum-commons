@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="440" viewBox="0 0 1080 440" role="img" aria-labelledby="title desc">
+<title id="title">一个面，不是整个魔方</title><desc id="desc">左侧只呈现魔方的一个绿色面；右侧呈现同一魔方可见的三个面。二维局部图不能表达整个立体对象。</desc>
+<metadata>创建时间：2026-10-11 22:27；最后更新时间：2026-10-11 22:27；时区：Asia/Shanghai UTC+8；ID：FSP-GEX-CUBE-001；版本：v0.1-candidate；状态：DESIGNED / NON_NORMATIVE / CONCEPTUAL_ILLUSTRATION；作者：独立全局表达工作线；范围：原创魔方阅读比喻，非求解教程或运行证明；基线：FSP-GLOBAL-BASELINE-1.0；QPP 1ebfcdfc7ceef9a9791891ea40c792596a94a1da。</metadata>
+<defs><pattern id="g" width="60" height="60" patternUnits="userSpaceOnUse"><rect width="60" height="60" fill="#233947"/><rect x="3" y="3" width="54" height="54" rx="5" fill="#419784"/></pattern><pattern id="y" width="60" height="60" patternUnits="userSpaceOnUse"><rect width="60" height="60" fill="#233947"/><rect x="3" y="3" width="54" height="54" rx="5" fill="#edc653"/></pattern><pattern id="b" width="60" height="60" patternUnits="userSpaceOnUse"><rect width="60" height="60" fill="#233947"/><rect x="3" y="3" width="54" height="54" rx="5" fill="#4c86bd"/></pattern></defs>
+<rect width="1080" height="440" fill="#fff"/>
+<g font-family="Microsoft YaHei,sans-serif" fill="#203343"><text x="35" y="45" font-size="28">① 一个面，不是整个魔方</text><text x="35" y="77" font-size="18" fill="#536577">章节可以准确描述局部，但局部不等于整体。</text></g>
+<g transform="translate(175 140)"><rect width="180" height="180" fill="url(#g)"/></g>
+<path d="M420 232H538L520 219M538 232L520 245" fill="none" stroke="#6d8090" stroke-width="3"/>
+<g transform="translate(660 167)"><rect width="180" height="180" fill="url(#g)"/><rect width="180" height="180" fill="url(#y)" transform="matrix(1 0 .5 -.333 0 0)"/><rect width="180" height="180" fill="url(#b)" transform="matrix(.5 -.333 0 1 180 0)"/></g>
+<g font-family="Microsoft YaHei,sans-serif" fill="#203343" font-size="21"><text x="166" y="375">只描述看到的一个面</text><text x="654" y="390">它属于一个有厚度的整体</text></g>
+<text x="35" y="426" font-family="Microsoft YaHei,sans-serif" font-size="16" fill="#536577">概念比喻，不代表全频谱与魔方数学等价；可见三个面也不是全部。</text>
+</svg>

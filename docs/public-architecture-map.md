@@ -1,12 +1,17 @@
+Created at: 2026-09-16 22:05 (Asia/Shanghai, UTC+8)
+Last updated at: 2026-10-11 23:58 (Asia/Shanghai, UTC+8)
+Document ID: FS-COMMONS-PUBLIC-ARCH-MAP-EN
+Version: v0.1-candidate-metadata; existing entry
+Status: PUBLIC_ORIENTATION / NON_NORMATIVE
+Responsible author: Commons maintainers; this revision by the independent global-expression workstream
+Scope: Product-responsibility orientation, not full runtime topology
+Fact baseline: Commons 8ae0ddb10662f8bc5cd42812e4d6d11f4c0322b3; QPP ff5c7677f5add1842b1caa9802b2c9de37d7fea9; FSP-GLOBAL-BASELINE-1.0
+
 # Full Spectrum Public Architecture Map
 
-Created at: 2026-09-16 22:05 UTC+8
-
-Last updated at: 2026-09-16 22:05 UTC+8
-
-Document status: `PUBLIC_ORIENTATION / NON_NORMATIVE`
-
 This map is for first-time readers. It explains which repository answers which question. It is not a runtime topology, protocol specification or proof that every path has been implemented.
+
+The arrows below explain one action-oriented view, not a mandatory product pipeline or the whole system. For local cycles, horizontal relationships, relative scales and feedback, start with [the whole-system and recursion guide](./whole-system-and-recursion.md), then the [synthetic refund example](./examples/refund-conflict-recursion.md). The existing map remains useful for locating responsibilities.
 
 ## Five questions
 

@@ -1,7 +1,13 @@
-# Full Spectrum Commons
+Created at: 2026-07-08 19:12 (Asia/Shanghai, UTC+8; first Git commit)
+Last updated at: 2026-10-11 23:58 (Asia/Shanghai, UTC+8)
+Document ID: FS-COMMONS-README
+Version: v0.1-candidate-metadata; existing entry, not a new product version
+Status: PUBLIC_ORIENTATION / NON_NORMATIVE
+Responsible author: Commons maintainers; this revision by the independent global-expression workstream
+Scope: Public navigation; no product contract or capability promotion
+Fact baseline: Commons 8ae0ddb10662f8bc5cd42812e4d6d11f4c0322b3; QPP ff5c7677f5add1842b1caa9802b2c9de37d7fea9; FSP-GLOBAL-BASELINE-1.0
 
-> Created at: 2026-07-08 19:12 UTC+8 (based on the first Git commit)
-> Last updated at: 2026-09-16 22:05 UTC+8
+# Full Spectrum Commons
 
 ## Public status header
 
@@ -70,6 +76,9 @@ Without a commons layer, the ecosystem becomes hard to navigate. This repository
 - private customer data, private tokens, internal-only meeting notes, or unpublished sensitive material
 
 ## Start here
+
+- [Understand the Whole and Recursion](./docs/whole-system-and-recursion.md) · [先看整体，再看递归](./docs/whole-system-and-recursion.zh-CN.md)
+- [Synthetic Refund Conflict Example](./docs/examples/refund-conflict-recursion.md) · [合成退款教学例](./docs/examples/refund-conflict-recursion.zh-CN.md)
 
 - [Start from Your Question](./docs/start-from-your-question.md) · [从你的问题开始](./docs/start-from-your-question.zh-CN.md)
 - [Public Architecture Map](./docs/public-architecture-map.md) · [公共架构图](./docs/public-architecture-map.zh-CN.md)
