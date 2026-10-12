@@ -1,13 +1,15 @@
 Created at: 2026-10-12 01:48 (Asia/Shanghai, UTC+8)
-Last updated at: 2026-10-12 01:48 (Asia/Shanghai, UTC+8)
+Last updated at: 2026-10-12 22:44 (Asia/Shanghai, UTC+8)
 Document ID: FSP-GEX-PUB-DEMO-EVIDENCE-001
-Version: v0.1-candidate
+Version: v0.2-candidate
 Status: SYNTHETIC_OFFLINE_EVIDENCE / NON_NORMATIVE
 Responsible author: Independent global-expression workstream
 Scope: Selected outputs and derived execution record; no product status promotion
 Fact baseline: Engine b21d2113d6c27237199af3d677cd05fc33f94e5a; Observer 5fd0a898d9ad193debe27b03361019e18eef23db; FSP-GLOBAL-BASELINE-1.0
 
 # Evidence and reproduction / 证据与复跑说明
+
+[Later reproduction file review / 后续两种环境复跑文件核验（中文）](reproduction-review.zh-CN.md). This supplement does not overwrite the original execution record or promote product status. Original-run review limits below describe the original workstream, not the later submitted reproduction materials.
 
 [中文导读](../../three-act-demonstration.zh-CN.md) · [English guide](../../three-act-demonstration.md)
 
