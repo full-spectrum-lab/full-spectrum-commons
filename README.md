@@ -1,11 +1,11 @@
 Created at: 2026-07-08 19:12 (Asia/Shanghai, UTC+8; first Git commit)
-Last updated at: 2026-10-11 23:58 (Asia/Shanghai, UTC+8)
+Last updated at: 2026-10-12 01:48 (Asia/Shanghai, UTC+8)
 Document ID: FS-COMMONS-README
-Version: v0.1-candidate-metadata; existing entry, not a new product version
+Version: v0.2-candidate-metadata; existing entry, not a new product version
 Status: PUBLIC_ORIENTATION / NON_NORMATIVE
 Responsible author: Commons maintainers; this revision by the independent global-expression workstream
 Scope: Public navigation; no product contract or capability promotion
-Fact baseline: Commons 8ae0ddb10662f8bc5cd42812e4d6d11f4c0322b3; QPP ff5c7677f5add1842b1caa9802b2c9de37d7fea9; FSP-GLOBAL-BASELINE-1.0
+Fact baseline: Commons 975338209823f2afeb49ca429660484a7b05b0be; QPP ff5c7677f5add1842b1caa9802b2c9de37d7fea9; FSP-GLOBAL-BASELINE-1.0
 
 # Full Spectrum Commons
 
@@ -78,6 +78,7 @@ Without a commons layer, the ecosystem becomes hard to navigate. This repository
 ## Start here
 
 - [Understand the Whole and Recursion](./docs/whole-system-and-recursion.md) · [先看整体，再看递归](./docs/whole-system-and-recursion.zh-CN.md)
+- [Three bounded executions](./docs/examples/three-act-demonstration.md) · [三幕有限实跑：退款、物流与证据关联](./docs/examples/three-act-demonstration.zh-CN.md) — synthetic inputs, recorded execution, not integrated or production validation.
 - [Synthetic Refund Conflict Example](./docs/examples/refund-conflict-recursion.md) · [合成退款教学例](./docs/examples/refund-conflict-recursion.zh-CN.md)
 
 - [Start from Your Question](./docs/start-from-your-question.md) · [从你的问题开始](./docs/start-from-your-question.zh-CN.md)

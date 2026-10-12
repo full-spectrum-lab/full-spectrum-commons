@@ -1,0 +1,279 @@
+{
+  "document_id": "FSP-GEX-DEMO-EVIDENCE-001",
+  "status": "DERIVED_PUBLIC_RECORD / NON_NORMATIVE",
+  "created_at": "2026-10-11T17:32:55.542128+00:00",
+  "derived_at": "2026-10-11T17:49:47.533668+00:00",
+  "scope": "Three independent synthetic offline runs; not an end-to-end integration",
+  "engine_commit": "b21d2113d6c27237199af3d677cd05fc33f94e5a",
+  "observer_commit": "5fd0a898d9ad193debe27b03361019e18eef23db",
+  "environment": {
+    "python": "3.12.8 (tags/v3.12.8:2dc476b, Dec  3 2024, 19:30:04) [MSC v.1942 64 bit (AMD64)]",
+    "platform": "Windows-10-10.0.19045-SP0",
+    "dependencies": {
+      "numpy": "1.26.4",
+      "jsonschema": "4.26.0"
+    }
+  },
+  "derivation": "Executable and absolute paths replaced with logical placeholders. Raw logs stay in the local pack; this record is not a byte-identical original. Selected raw JSON and stderr files are byte-identical copies.",
+  "runs": [
+    {
+      "name": "ecommerce-generate",
+      "argv_logical": [
+        "python",
+        "-m",
+        "src.governance_chain",
+        "generate",
+        "--input",
+        "examples/governance_chain/raw-input.ecommerce.json",
+        "--out",
+        "<DEMO_ROOT>\\evidence\\ecommerce"
+      ],
+      "exit_code": 0,
+      "stdout_sha256": "8ca341cb5fe4d5d4a882dc6f4bb72c89d0562331ec1b0ade4205711c859032f1",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "ecommerce-validate",
+      "argv_logical": [
+        "python",
+        "-m",
+        "src.governance_chain",
+        "validate",
+        "--dir",
+        "<DEMO_ROOT>\\evidence\\ecommerce"
+      ],
+      "exit_code": 2,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "3a97b4e76fdc1de38ce075d0477cef53dc8801813ae246da4463d4cab68ff098"
+    },
+    {
+      "name": "logistics-generate",
+      "argv_logical": [
+        "python",
+        "-m",
+        "src.governance_chain",
+        "generate",
+        "--input",
+        "examples/governance_chain/raw-input.logistics.json",
+        "--out",
+        "<DEMO_ROOT>\\evidence\\logistics"
+      ],
+      "exit_code": 0,
+      "stdout_sha256": "3c0fa227a3850cb6d1357e1319694f6870b3a6124d3ff56eabcb044b4dddc4da",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "logistics-validate",
+      "argv_logical": [
+        "python",
+        "-m",
+        "src.governance_chain",
+        "validate",
+        "--dir",
+        "<DEMO_ROOT>\\evidence\\logistics"
+      ],
+      "exit_code": 2,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "3a97b4e76fdc1de38ce075d0477cef53dc8801813ae246da4463d4cab68ff098"
+    },
+    {
+      "name": "governance-tests",
+      "argv_logical": [
+        "python",
+        "-m",
+        "unittest",
+        "tests.test_governance_chain",
+        "tests.test_governance_chain_adapters",
+        "-v"
+      ],
+      "exit_code": 0,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "8f177d042886dda412d609fffc40af3e37768fdc80e211b2fc5eda265b2d440e"
+    },
+    {
+      "name": "observer-reference",
+      "argv_logical": [
+        "python",
+        "scripts/ig5-reference-pipeline.py"
+      ],
+      "exit_code": 0,
+      "stdout_sha256": "bb53e26cb26c571c3c929ba1afe739aaed52136a1a17d8f7624a0e52ad416070",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "observer-worker",
+      "argv_logical": [
+        "python",
+        "engine/worker/worker.py",
+        "--engine-root",
+        "engine/vendor/full-spectrum-engine"
+      ],
+      "exit_code": 0,
+      "stdout_sha256": "4fc5db74832c67cb2784ccb91da1188bcbb0d62155bf4e98368ad25ff0447c3f",
+      "stderr_sha256": "b2a0090845fd88ce1c4a8d20dddacaf1726d230a565eafaa227d24fc7352ef31"
+    },
+    {
+      "name": "ecommerce-validate-corrected",
+      "argv_logical": [
+        "python",
+        "-m",
+        "src.governance_chain",
+        "validate",
+        "<DEMO_ROOT>\\evidence\\ecommerce"
+      ],
+      "exit_code": 0,
+      "stdout_sha256": "db85a7ea2f642bac98602aa4abfd41ae52fddcdc69a36572f6695bd3aac39bcb",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "logistics-validate-corrected",
+      "argv_logical": [
+        "python",
+        "-m",
+        "src.governance_chain",
+        "validate",
+        "<DEMO_ROOT>\\evidence\\logistics"
+      ],
+      "exit_code": 0,
+      "stdout_sha256": "9dc7da50ff75f2675dc0aa891bd941d5a2ea95703e4f76f66e89a36640130cdc",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "golden_comparisons": {
+    "ecommerce": [
+      {
+        "file": "canonical-context.ecommerce.json",
+        "exists": true,
+        "golden_sha256": "f6ae41d3d1699425bf03f166d0ac050492eb5f283c4401bcf8a7a276cbc88b86",
+        "actual_sha256": "f6ae41d3d1699425bf03f166d0ac050492eb5f283c4401bcf8a7a276cbc88b86",
+        "byte_equal": true,
+        "json_equal": true
+      },
+      {
+        "file": "cell-manifest.ecommerce.json",
+        "exists": true,
+        "golden_sha256": "103a81ee29f9fb337120e819f9fabfb0a3a25b5e1870ba96b87c1f536127caac",
+        "actual_sha256": "103a81ee29f9fb337120e819f9fabfb0a3a25b5e1870ba96b87c1f536127caac",
+        "byte_equal": true,
+        "json_equal": true
+      },
+      {
+        "file": "enterprise-writeback.ecommerce.json",
+        "exists": true,
+        "golden_sha256": "63d80af4e3ad8f5cec617f95a545f62e2aa3a254b49ccab0efd37a5556bfdca4",
+        "actual_sha256": "63d80af4e3ad8f5cec617f95a545f62e2aa3a254b49ccab0efd37a5556bfdca4",
+        "byte_equal": true,
+        "json_equal": true
+      },
+      {
+        "file": "governance-event.ecommerce.json",
+        "exists": true,
+        "golden_sha256": "beb093a6165a0fe32091938e63a92873248ceb1242ff87264bd05986ace5f692",
+        "actual_sha256": "beb093a6165a0fe32091938e63a92873248ceb1242ff87264bd05986ace5f692",
+        "byte_equal": true,
+        "json_equal": true
+      },
+      {
+        "file": "output-envelope.ecommerce.json",
+        "exists": true,
+        "golden_sha256": "45e05c320014381ee224d9a9571fb613f264f2346cb0237eb75f75bfae5446d6",
+        "actual_sha256": "45e05c320014381ee224d9a9571fb613f264f2346cb0237eb75f75bfae5446d6",
+        "byte_equal": true,
+        "json_equal": true
+      },
+      {
+        "file": "report.ecommerce.md",
+        "exists": true,
+        "golden_sha256": "5801eccf7ba7de407d8ee2b866d0d364e0ca34b323cc8922467e7597f4485fed",
+        "actual_sha256": "5801eccf7ba7de407d8ee2b866d0d364e0ca34b323cc8922467e7597f4485fed",
+        "byte_equal": true
+      }
+    ],
+    "logistics": [
+      {
+        "file": "canonical-context.logistics.json",
+        "exists": true,
+        "golden_sha256": "93b29914a938a9127dd3e36500643d017496e79edef0c41bc617fd27aabeb3c4",
+        "actual_sha256": "93b29914a938a9127dd3e36500643d017496e79edef0c41bc617fd27aabeb3c4",
+        "byte_equal": true,
+        "json_equal": true
+      },
+      {
+        "file": "cell-manifest.logistics.json",
+        "exists": true,
+        "golden_sha256": "bbac1c0ba15113c70001dc122172b4b8cdb4cf0922efe693d5ffa46a9ecd70a7",
+        "actual_sha256": "bbac1c0ba15113c70001dc122172b4b8cdb4cf0922efe693d5ffa46a9ecd70a7",
+        "byte_equal": true,
+        "json_equal": true
+      },
+      {
+        "file": "enterprise-writeback.logistics.json",
+        "exists": true,
+        "golden_sha256": "18a4b0e60c1018810fb97e4054247523c9ab3b151243808d20ddbbdbe3a28936",
+        "actual_sha256": "18a4b0e60c1018810fb97e4054247523c9ab3b151243808d20ddbbdbe3a28936",
+        "byte_equal": true,
+        "json_equal": true
+      },
+      {
+        "file": "governance-event.logistics.json",
+        "exists": true,
+        "golden_sha256": "ceae0a9eee004f236cfdd54535bb5b50fdc0163db24b124b82266abe77d575b9",
+        "actual_sha256": "ceae0a9eee004f236cfdd54535bb5b50fdc0163db24b124b82266abe77d575b9",
+        "byte_equal": true,
+        "json_equal": true
+      },
+      {
+        "file": "output-envelope.logistics.json",
+        "exists": true,
+        "golden_sha256": "0ba82bc0ee59d22b5e869b2870735c12a0b1c6a7ac9491fff6e3db068ebb7c05",
+        "actual_sha256": "0ba82bc0ee59d22b5e869b2870735c12a0b1c6a7ac9491fff6e3db068ebb7c05",
+        "byte_equal": true,
+        "json_equal": true
+      },
+      {
+        "file": "report.logistics.md",
+        "exists": true,
+        "golden_sha256": "8100f97d13531b7782547598621b91dcd4170174c937298b4f225175314f6e6a",
+        "actual_sha256": "8100f97d13531b7782547598621b91dcd4170174c937298b4f225175314f6e6a",
+        "byte_equal": true
+      }
+    ]
+  },
+  "domain_comparison": {
+    "ecommerce": {
+      "risk_level": "high",
+      "reason_code": "REFUND_COMMITMENT_WITHOUT_AUTHORITY",
+      "allow_auto_reply": false,
+      "allow_commitment": false,
+      "allow_auto_execution": false,
+      "human_review_required": true,
+      "review_role": "customer_service_supervisor",
+      "review_queue": "after_sales_review",
+      "recommended_response": "当前信息不足，需人工核实退款权限后再处理。"
+    },
+    "logistics": {
+      "risk_level": "high",
+      "reason_code": "LOGISTICS_EVIDENCE_INCOMPLETE",
+      "allow_auto_reply": false,
+      "allow_commitment": false,
+      "allow_auto_execution": false,
+      "human_review_required": true,
+      "review_role": "logistics_quality_supervisor",
+      "review_queue": "cold_chain_review",
+      "recommended_response": "冷链证据不完整，需人工核验温控记录后再确认交付状态。"
+    }
+  },
+  "observer_worker": {
+    "golden_json_equal": true,
+    "output_digest_equal": true,
+    "response_status": "SUCCESS"
+  },
+  "observer_binding": {
+    "entries": 50,
+    "all_raw_bytes_and_sizes_match": true
+  },
+  "persistent_observer_database": "NOT_VERIFIED",
+  "formal_dotnet_gate": "NOT_EXECUTED",
+  "review_type": "AUTHOR_EVIDENCE_CROSSCHECK_NOT_INDEPENDENT_THIRD_PARTY",
+  "license_provenance": "Synthetic generated outputs and source input excerpts from the pinned Engine/Observer repositories; upstream license and provenance links are in README.md."
+}
