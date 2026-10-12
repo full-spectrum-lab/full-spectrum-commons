@@ -1,11 +1,11 @@
 Created at: 2026-07-08 19:12 (Asia/Shanghai, UTC+8; first Git commit)
-Last updated at: 2026-10-12 01:48 (Asia/Shanghai, UTC+8)
+Last updated at: 2026-10-13 01:45 (Asia/Shanghai, UTC+8)
 Document ID: FS-COMMONS-README
-Version: v0.2-candidate-metadata; existing entry, not a new product version
+Version: v0.3-candidate-navigation; existing entry, not a new product version
 Status: PUBLIC_ORIENTATION / NON_NORMATIVE
 Responsible author: Commons maintainers; this revision by the independent global-expression workstream
 Scope: Public navigation; no product contract or capability promotion
-Fact baseline: Commons 975338209823f2afeb49ca429660484a7b05b0be; QPP ff5c7677f5add1842b1caa9802b2c9de37d7fea9; FSP-GLOBAL-BASELINE-1.0
+Fact baseline: Commons 9868a82f4b89095d870c502acc952ccc7b6bc865; QPP ff5c7677f5add1842b1caa9802b2c9de37d7fea9; FSP-GLOBAL-BASELINE-1.0
 
 # Full Spectrum Commons
 
@@ -77,6 +77,14 @@ Without a commons layer, the ecosystem becomes hard to navigate. This repository
 
 ## Start here
 
+Choose a reading path, not a mandatory execution sequence:
+
+1. **Understand the whole / 理解整体:** [English](./docs/whole-system-and-recursion.md) · [中文](./docs/whole-system-and-recursion.zh-CN.md).
+2. **See bounded executions / 看有限实跑:** [English](./docs/examples/three-act-demonstration.md) · [中文](./docs/examples/three-act-demonstration.zh-CN.md). Separate synthetic executions, not an integrated loop or customer deployment.
+3. **Check evidence and reproduce / 核查证据与复跑:** [Fixed sources and commands](./docs/examples/evidence/three-act-20261012/README.md) · [两种环境复跑文件核验](./docs/examples/evidence/three-act-20261012/reproduction-review.zh-CN.md). The review does not publish the locally retained original packages or certify production capability.
+
+### Further reading and reference library
+
 - [Understand the Whole and Recursion](./docs/whole-system-and-recursion.md) · [先看整体，再看递归](./docs/whole-system-and-recursion.zh-CN.md)
 - [Three bounded executions](./docs/examples/three-act-demonstration.md) · [三幕有限实跑：退款、物流与证据关联](./docs/examples/three-act-demonstration.zh-CN.md) — synthetic inputs, recorded execution, not integrated or production validation.
 - [Synthetic Refund Conflict Example](./docs/examples/refund-conflict-recursion.md) · [合成退款教学例](./docs/examples/refund-conflict-recursion.zh-CN.md)
@@ -106,9 +114,9 @@ Without a commons layer, the ecosystem becomes hard to navigate. This repository
 
 If you are new to Full Spectrum:
 
-1. Start with [Start from Your Question](./docs/start-from-your-question.md)
-2. Read [Four Independent Engineering Tracks](./docs/four-independent-engineering-tracks.md)
-3. Read [START_HERE.md](./START_HERE.md)
+1. Choose one of the three entry paths above: whole-system understanding, bounded executions or evidence/reproduction.
+2. Use [START_HERE.md](./START_HERE.md) to select a repository by responsibility.
+3. Consult [Four Independent Engineering Tracks](./docs/four-independent-engineering-tracks.md) for engineering boundaries.
 4. Open [`diagrams/README.md`](./diagrams/README.md)
 5. Go to `full-spectrum-observer` if you need the local application boundary
 6. Go to `full-spectrum-engine` if you need runnable examples

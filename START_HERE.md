@@ -1,7 +1,23 @@
+创建时间：2026-07-09 18:26（北京时间，UTC+8；依据 Git 首次提交）
+最后更新时间：2026-10-13 01:45（Asia/Shanghai，UTC+8）
+文档编号：FS-COMMONS-START-HERE
+版本：v0.1-candidate-navigation
+状态：PUBLIC_ORIENTATION / NON_NORMATIVE
+责任作者：Commons maintainers；本次入口修订 Codex
+范围：首次访问导航；不修订产品状态或合同
+事实基线：Commons 9868a82f4b89095d870c502acc952ccc7b6bc865；既有产品状态段落保持不变
+
 # Start Here
 
-创建时间：2026-07-09 18:26（北京时间，UTC+8；依据 Git 首次提交）
-最后更新时间：2026-09-16 22:05（北京时间，UTC+8）
+## Three entry paths / 三条入口
+
+These are reading choices, not runtime stages / 这是阅读选择，不是运行阶段。
+
+1. **理解整体 / Understand the whole:** [中文导读](./docs/whole-system-and-recursion.zh-CN.md) · [English](./docs/whole-system-and-recursion.md).
+2. **看有限实跑 / See bounded executions:** [退款、物流与证据关联](./docs/examples/three-act-demonstration.zh-CN.md) · [English](./docs/examples/three-act-demonstration.md). Separate synthetic runs; not a joined loop or customer deployment.
+3. **核查证据与复跑 / Check evidence and reproduce:** [固定来源、命令和限制](./docs/examples/evidence/three-act-20261012/README.md) · [两种环境复跑文件核验](./docs/examples/evidence/three-act-20261012/reproduction-review.zh-CN.md). Original packages are retained locally, not published by the review page; no certification or product-status promotion.
+
+## Additional paths by question
 
 Quick public paths:
 
@@ -32,7 +48,7 @@ Full Spectrum is an evolving open-source effort around:
 - enterprise AI inspection and review patterns
 - cross-repository public coordination assets
 
-It is best understood as a layered ecosystem rather than a single product.
+Its overall design includes autonomous subjects, horizontal relationships, larger contexts that recompute their own judgments, and feedback that preserves history. The four independent engineering responsibility domains support this design; they are not a mandatory linear stack or its complete definition. Architecture direction does not prove that a complete recursive runtime or cross-organization network is implemented.
 
 ## 2. Where should I go?
 
