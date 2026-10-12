@@ -1,13 +1,15 @@
 Created at: 2026-07-08 19:12 (Asia/Shanghai, UTC+8; first Git commit)
-Last updated at: 2026-10-13 01:45 (Asia/Shanghai, UTC+8)
+Last updated at: 2026-10-13 03:10 (Asia/Shanghai, UTC+8)
 Document ID: FS-COMMONS-README
-Version: v0.3-candidate-navigation; existing entry, not a new product version
+Version: v0.4-candidate-reader-feedback; existing entry, not a new product version
 Status: PUBLIC_ORIENTATION / NON_NORMATIVE
 Responsible author: Commons maintainers; this revision by the independent global-expression workstream
 Scope: Public navigation; no product contract or capability promotion
-Fact baseline: Commons 9868a82f4b89095d870c502acc952ccc7b6bc865; QPP ff5c7677f5add1842b1caa9802b2c9de37d7fea9; FSP-GLOBAL-BASELINE-1.0
+Fact baseline: Commons 741f5af62fc4b050cfba7ee71267d0fed26305e7; QPP ff5c7677f5add1842b1caa9802b2c9de37d7fea9; FSP-GLOBAL-BASELINE-1.0
 
 # Full Spectrum Commons
+
+Full Spectrum's overall design concerns autonomous subjects retaining boundaries, cooperating, making accountable judgments and learning from feedback while preserving history. It is not just an audit toolbox or the Engine; four engineering responsibility domains support the wider design. [Understand the whole](./docs/whole-system-and-recursion.md) · [中文：先理解主体、关系、尺度与反馈](./docs/whole-system-and-recursion.zh-CN.md). This describes design, not proof of a complete recursive runtime.
 
 ## Public status header
 
