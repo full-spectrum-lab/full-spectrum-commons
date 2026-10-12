@@ -1,13 +1,52 @@
 Created at: 2026-10-12 01:48 (Asia/Shanghai, UTC+8)
-Last updated at: 2026-10-12 22:44 (Asia/Shanghai, UTC+8)
+Last updated at: 2026-10-13 03:10 (Asia/Shanghai, UTC+8)
 Document ID: FSP-GEX-PUB-DEMO-EVIDENCE-001
-Version: v0.2-candidate
+Version: v0.3-candidate-reader-feedback
 Status: SYNTHETIC_OFFLINE_EVIDENCE / NON_NORMATIVE
 Responsible author: Independent global-expression workstream
 Scope: Selected outputs and derived execution record; no product status promotion
 Fact baseline: Engine b21d2113d6c27237199af3d677cd05fc33f94e5a; Observer 5fd0a898d9ad193debe27b03361019e18eef23db; FSP-GLOBAL-BASELINE-1.0
 
 # Evidence and reproduction / 证据与复跑说明
+
+## Start here: reproduce the two Engine cases
+
+中文：这里可复跑的是固定版本的电商退款与冷链物流两个合成案例，不是旧退款场景说明，也不是三幕联合闭环。下面的准备步骤是文档指引；本次修订没有重新执行程序。
+
+1. Download and extract the [fixed Engine source ZIP](https://github.com/full-spectrum-lab/full-spectrum-engine/archive/b21d2113d6c27237199af3d677cd05fc33f94e5a.zip), then open a terminal in the extracted repository root. Use commit `b21d2113d6c27237199af3d677cd05fc33f94e5a`, not latest main or a same-name tag. Record your own archive digest. The prior same-URL download was 525634 bytes, SHA-256 `5819a0b9bc0d9f4499fb3f4c12184a2938ea4e07ae00f445a40eefd080a2a140`; a mismatch requires source investigation, not assuming a repackaged archive is invalid or silently accepting it.
+2. Use an isolated Python environment. Source metadata requires Python >=3.10; the original run used 3.12.8, later submitted runs used 3.12.11/3.13.14. This does not prove all supported Python versions. For the original dependency combination, install NumPy 1.26.4 and jsonschema 4.26.0. `jsonschema` is not in the fixed requirements file: explicitly install it to avoid the simplified fallback validator. These are reference versions, not new product requirements.
+
+```sh
+python -m venv .venv-repro
+# Windows PowerShell: .\.venv-repro\Scripts\Activate.ps1
+# Linux/macOS shell: source .venv-repro/bin/activate
+python -m pip install numpy==1.26.4 jsonschema==4.26.0
+python -c "import jsonschema; from jsonschema import Draft202012Validator; from importlib.metadata import version; print(version('jsonschema'))"
+python -m src.governance_chain generate --input examples/governance_chain/raw-input.ecommerce.json --out out-repro/ecommerce
+python -m src.governance_chain validate out-repro/ecommerce
+python -m src.governance_chain generate --input examples/governance_chain/raw-input.logistics.json --out out-repro/logistics
+python -m src.governance_chain validate out-repro/logistics
+python -m unittest tests.test_governance_chain tests.test_governance_chain_adapters -v
+```
+
+Use a new `out-repro` directory, never overwrite tracked evidence. Commands run from the source root. `validate` takes a positional directory, not `--dir`. On Windows use Windows paths, not `/home/...` paths for native Python. Activation may depend on local shell policy; alternatively call the venv Python directly. The shell variants above are instructions, not a claim of macOS verification.
+
+3. Judge each item separately: generate and validate exit 0; each domain has five JSON objects passing full Schema validation plus one Markdown report; the two selected test modules report 8 tests OK. Compare all six files per domain against `tests/fixtures/expected_ecommerce_chain/` and `tests/fixtures/expected_logistics_chain/` in this same fixed source. Test success checks JSON objects, not raw-byte identity. Independently compare file inventories, size and SHA-256 for byte-level claims. If bytes differ, report that first; separately compare JSON values (preserve array order/types and reject duplicate keys) and Markdown with only explicitly recorded newline normalization. Do not silently normalize away differences. Keep commands, environment, exit codes, outputs and failures.
+
+### Public filename mapping / 公开文件名映射
+
+The table applies to the selected Engine files only, relative to this evidence directory. Full six-file Goldens live in the fixed source; public selected files do not replace that complete baseline.
+
+| Public file | Fixed-source input or generated filename |
+|---|---|
+| `ecommerce/input.json` | `examples/governance_chain/raw-input.ecommerce.json` |
+| `ecommerce/output-envelope.json` | `output-envelope.ecommerce.json` |
+| `ecommerce/enterprise-writeback.json` | `enterprise-writeback.ecommerce.json` |
+| `logistics/input.json` | `examples/governance_chain/raw-input.logistics.json` |
+| `logistics/output-envelope.json` | `output-envelope.logistics.json` |
+| `logistics/enterprise-writeback.json` | `enterprise-writeback.logistics.json` |
+
+Third-act Observer instructions remain separately below. Its Engine binding is a different source from these two cases: identical tag names across GitHub/Gitee do not establish identical commits. Follow the binding's exact commit and lock hashes; if unavailable or mismatched, stop that Observer reproduction and record the limitation rather than substitute the two-case Engine or latest source.
 
 [Later reproduction file review / 后续两种环境复跑文件核验（中文）](reproduction-review.zh-CN.md). This supplement does not overwrite the original execution record or promote product status. Original-run review limits below describe the original workstream, not the later submitted reproduction materials.
 
